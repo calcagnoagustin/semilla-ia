@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Astral Remembrance · Spam Studios</title>
+<meta name="description" content="Astral Remembrance, una aventura de plataformas y puzles entre el mundo físico y el astral, de Spam Studios. Agregalo a tu lista de deseados en Steam.">
+<meta property="og:title" content="Astral Remembrance · Algunos recuerdos abren otros mundos">
+<meta property="og:description" content="Plataformas, puzles y un viaje entre el mundo físico y el astral. En desarrollo. Agregalo a deseados en Steam.">
+<meta property="og:image" content="https://semillaia.com/astral/img/Main-personaje-hd.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230D2F3F'/%3E%3Cpath d='M16 5l2.6 7.4L26 15l-7.4 2.6L16 25l-2.6-7.4L6 15l7.4-2.6z' fill='%23F3EEE2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--noche:#0D2F3F;--noche2:#154658;--crema:#F3EEE2;--crema2:#EAE3D3;--tinta:#1E2A32;--gris:#5C6870;--linea:rgba(30,42,50,.14);--cielo:#CFE6F3;--oro:#E7B65A}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--crema);color:var(--tinta);font-family:'Lora',Georgia,serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:700;line-height:1.02;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(38px,5vw,60px)}
+h3{font-size:24px}
+p{margin:0}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+section{padding:88px 0}
+.eti{font-family:'Lora',serif;font-size:12px;letter-spacing:.32em;text-transform:uppercase;font-weight:600;color:var(--noche);margin:0 0 14px;display:flex;align-items:center;gap:14px}
+.eti::after{content:"";flex:0 0 120px;height:1px;background:var(--linea)}
+.bajada{max-width:560px;color:var(--gris);margin-top:16px;font-size:18px}
+.btn{display:inline-flex;align-items:center;gap:12px;padding:15px 24px;border-radius:12px;font-family:'Lora',serif;font-weight:600;font-size:16px;text-decoration:none;transition:transform .2s,background .2s,border-color .2s;line-height:1}
+.btn:hover{transform:translateY(-2px)}
+.btn.pri{background:var(--noche);color:#fff;box-shadow:0 10px 24px -12px rgba(13,47,63,.8)}
+.btn.pri:hover{background:var(--noche2)}
+.btn.claro{background:var(--crema);color:var(--noche)}
+.btn.claro:hover{background:#fff}
+.btn.sec{color:var(--noche);text-decoration:none}
+.btn.sec:hover{transform:none;text-decoration:underline}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* nav */
+.nav{position:absolute;top:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:20px 24px;max-width:1140px;margin:0 auto}
+.nav .logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--noche)}
+.nav .logo img{height:36px;width:auto}
+.nav .logo span{font-size:11px;letter-spacing:.32em;text-transform:uppercase;font-weight:600}
+.nav .links{display:flex;gap:26px;align-items:center;font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600;color:var(--noche)}
+.nav .links a{text-decoration:none}
+.nav .idiomas{display:flex;gap:6px;align-items:center;font-family:'Lora',serif;font-size:13px;letter-spacing:.08em;padding-left:22px;border-left:1px solid rgba(13,47,63,.25)}
+.nav .idiomas a{text-decoration:none;opacity:.6;cursor:pointer}
+.nav .idiomas a.act{opacity:1;font-weight:600;border-bottom:1.5px solid var(--noche)}
+.nav .btn{padding:12px 20px;font-size:15px}
+@media(max-width:760px){.nav .links>a:not(.btn),.nav .idiomas{display:none}.nav .logo span{display:none}.nav .btn{padding:10px 14px;font-size:14px}}
+
+/* hero */
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden;background:var(--cielo);padding:110px 0 70px}
+.hero img.fondo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%;transform:scale(1.28);transform-origin:0% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(235,243,248,.96) 0%,rgba(235,243,248,.86) 30%,rgba(235,243,248,.3) 48%,rgba(235,243,248,0) 60%)}
+.hero .wrap{position:relative;z-index:2;width:100%}
+.hero .wrap>*{max-width:480px}
+button.btn{border:0;background:none;cursor:pointer;font:inherit}
+.hero .de{font-size:12px;letter-spacing:.34em;text-transform:uppercase;font-weight:600;color:var(--noche);opacity:.85}
+.hero .titulo{margin-top:14px;font-family:'Cormorant Garamond',serif;color:var(--noche);line-height:.9}
+.hero .titulo .a{display:block;font-size:clamp(64px,9vw,112px);font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.hero .titulo .a i{font-style:normal;color:#5B8FA8}
+.hero .titulo .r{display:block;font-size:clamp(28px,4vw,46px);font-weight:600;letter-spacing:.02em;margin-top:2px;padding-left:4px}
+.hero h1{margin-top:30px;font-size:clamp(34px,4.6vw,56px);max-width:560px;color:var(--tinta)}
+.hero .bajada{margin-top:14px;font-size:18px;color:#3C4A54;max-width:420px}
+.hero .ctas{display:flex;flex-direction:column;align-items:flex-start;gap:14px;margin-top:30px}
+.hero .estado{margin-top:22px;font-size:14px;color:var(--gris);letter-spacing:.04em}
+@media(max-width:760px){.hero{min-height:0;padding:100px 0 0;display:block}.hero .wrap>*{max-width:none}.hero img.fondo{position:relative;width:100%;height:72vw;object-position:50% 50%;transform:none}.hero::after{background:linear-gradient(180deg,rgba(235,243,248,0) 0%,rgba(235,243,248,0) 50%,rgba(243,238,226,.9) 70%,rgba(243,238,226,1) 100%)}.hero .wrap{margin-top:-64px;padding-bottom:48px}.hero h1{max-width:none}}
+
+/* datos */
+.datos{background:var(--crema2);border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
+.datos .wrap{display:flex;justify-content:space-around;align-items:center;flex-wrap:wrap;gap:14px 24px;padding-top:20px;padding-bottom:20px}
+.datos div{display:flex;align-items:center;gap:12px;font-size:15.5px;color:var(--tinta)}
+.datos svg{width:22px;height:22px;color:var(--noche);flex:none}
+.datos div+div{border-left:1px solid var(--linea);padding-left:24px}
+@media(max-width:700px){.datos div+div{border:0;padding-left:0}}
+
+/* el juego */
+.juego .dos{display:grid;grid-template-columns:1fr 1.25fr;gap:48px;align-items:center}
+.juego h2{max-width:420px}
+.teaser{position:relative;display:block;border-radius:16px;overflow:hidden;aspect-ratio:16/9;background:#000;box-shadow:0 30px 60px -30px rgba(13,47,63,.6);cursor:pointer;border:0;padding:0;width:100%}
+.teaser img{width:100%;height:100%;object-fit:cover}
+.teaser .play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:12px;color:#fff}
+.teaser .play i{width:74px;height:74px;border-radius:50%;background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.9);backdrop-filter:blur(6px);display:grid;place-items:center}
+.teaser .play i::after{content:"";border-left:20px solid #fff;border-top:12px solid transparent;border-bottom:12px solid transparent;margin-left:5px}
+.teaser .play span{font-family:'Lora',serif;font-size:12px;letter-spacing:.3em;text-transform:uppercase;font-weight:600;text-shadow:0 2px 8px rgba(0,0,0,.6)}
+@media(max-width:860px){.juego .dos{grid-template-columns:1fr;gap:30px}}
+
+/* explorá */
+.explora{padding-top:0}
+.explora .cab{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:28px}
+.explora .cab h2{flex:1 1 440px}.explora .cab p{color:var(--gris);flex:0 1 440px}
+.planos{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.plano img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:14px}
+.plano figcaption{text-align:center;margin-top:14px;font-weight:600;color:var(--tinta)}
+.plano figcaption::after{content:"";display:block;width:48px;height:2px;background:var(--noche);margin:10px auto 0}
+figure{margin:0}
+@media(max-width:760px){.planos{grid-template-columns:1fr}}
+
+/* galería */
+.galeria{background:var(--crema2);padding-top:72px;padding-bottom:72px}
+.galeria .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
+.galeria img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:12px}
+@media(max-width:760px){.galeria .grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.galeria .grid{grid-template-columns:1fr}}
+
+/* cierre */
+.cierre{position:relative;overflow:hidden;background:var(--noche);color:#fff;padding:96px 0}
+.cierre img.fondo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%;opacity:.5}
+.cierre::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,47,63,.35) 0%,rgba(13,47,63,.85) 45%,rgba(13,47,63,.85) 100%)}
+.cierre .wrap{position:relative;z-index:2;text-align:center}
+.cierre h2{font-size:clamp(40px,6vw,66px);color:#fff}
+.cierre .ctas{margin-top:30px}
+.cierre .nota{margin-top:18px;font-size:15px;color:rgba(255,255,255,.8)}
+
+/* fechas */
+.fechas{padding-top:72px}
+.fechas .lista{margin-top:30px;border-top:1px solid var(--linea)}
+.fechas .fe{display:grid;grid-template-columns:92px 1fr auto;align-items:center;gap:26px;padding:22px 0;border-bottom:1px solid var(--linea);text-decoration:none;color:inherit}
+.fechas .dia{display:flex;flex-direction:column;align-items:center;line-height:1}
+.fechas .dia b{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:44px}
+.fechas .dia small{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--noche);margin-top:4px;font-weight:600}
+.fechas .tit{font-size:20px;line-height:1.3;font-weight:600}
+.fechas .tit small{display:block;font-size:14px;color:var(--gris);margin-top:4px;font-weight:400}
+.fechas .lnk{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--noche);white-space:nowrap}
+.fechas .nada{margin-top:30px;padding:26px 0;border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);color:var(--gris);font-size:18px}
+@media(max-width:640px){.fechas .fe{grid-template-columns:64px 1fr;gap:16px;padding:18px 0}.fechas .dia b{font-size:34px}.fechas .lnk{grid-column:2}}
+
+footer{border-top:1px solid var(--linea);padding:26px 0 calc(26px + env(safe-area-inset-bottom))}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:14px;color:var(--gris)}
+footer .logo{display:flex;align-items:center;gap:12px;color:var(--noche)}
+footer .logo img{height:30px;width:auto}
+footer .logo span{font-size:11px;letter-spacing:.32em;text-transform:uppercase;font-weight:600}
+footer .links{display:flex;gap:18px;flex-wrap:wrap}
+footer a{text-decoration:none;color:var(--gris)}
+
+/* modal del teaser */
+#modal{position:fixed;inset:0;z-index:100;background:rgba(5,16,22,.92);display:none;align-items:center;justify-content:center;padding:24px}
+#modal.abierto{display:flex}
+#modal .caja{width:min(1100px,100%);aspect-ratio:16/9;background:#000;border-radius:14px;overflow:hidden;position:relative}
+#modal video{width:100%;height:100%;display:block}
+#modal .cerrar{position:absolute;top:-44px;right:0;background:none;border:0;color:#fff;font-size:30px;cursor:pointer;line-height:1}
+#modal .alt{position:absolute;left:0;right:0;bottom:-40px;text-align:center;font-size:14px;color:rgba(255,255,255,.75)}
+#modal .alt a{color:#fff}
+</style>
+</head>
+<body>
+
+<header class="hero" data-b="1">
+  <img class="fondo" src="img/Main-personaje-hd.jpg" alt="La protagonista de Astral Remembrance sentada en el pasto, con una mariposa" data-e="1">
+  <nav class="nav" data-b="2">
+    <a class="logo" href="https://spamstudios.net/" target="_blank" rel="noopener"><img src="img/spam.svg" alt="Spam Studios" data-e="2"><span data-e="3">Studios</span></a>
+    <div class="links">
+      <a href="#juego" data-e="4">El juego</a>
+      <a href="#imagenes" data-e="5">Imágenes</a>
+      <span class="idiomas" id="idiomas"><a data-lang="es" data-e="6">ES</a><span data-e="7">/</span><a data-lang="en" data-e="8">EN</a></span>
+      <a class="btn pri" href="https://store.steampowered.com/app/4334100/Astral_Remembrance/" target="_blank" rel="noopener" data-e="9"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-9.98 9.33l5.36 2.22a2.84 2.84 0 0 1 1.6-.5h.16l2.39-3.46v-.05a3.78 3.78 0 1 1 3.78 3.78h-.09l-3.4 2.43v.13a2.84 2.84 0 0 1-5.65.42L2.4 14.72A10 10 0 1 0 12 2zm-3.3 13.9l-1.23-.51a2.13 2.13 0 0 0 3.94.17 2.13 2.13 0 0 0-1.8-2.93l1.27.53a1.57 1.57 0 1 1-1.2 2.9l-.98-.16zm6.6-6.58a2.52 2.52 0 1 0 0-5.04 2.52 2.52 0 0 0 0 5.04zm0-.63a1.89 1.89 0 1 1 0-3.78 1.89 1.89 0 0 1 0 3.78z"/></svg>Ver en Steam</a>
+    </div>
+  </nav>
+  <div class="wrap">
+    <p class="de" data-e="10">Una aventura de Spam Studios</p>
+    <div class="titulo" aria-hidden="true"><span class="a" data-e="11"><i>✦</i>Astral</span><span class="r" data-e="12">Remembrance</span></div>
+    <h1 data-e="13">Algunos recuerdos abren otros mundos.</h1>
+    <p class="bajada" data-e="14">Plataformas, puzles y un viaje entre el mundo físico y el astral.</p>
+    <div class="ctas">
+      <a class="btn pri" href="https://store.steampowered.com/app/4334100/Astral_Remembrance/" target="_blank" rel="noopener" data-e="15"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-9.98 9.33l5.36 2.22a2.84 2.84 0 0 1 1.6-.5h.16l2.39-3.46v-.05a3.78 3.78 0 1 1 3.78 3.78h-.09l-3.4 2.43v.13a2.84 2.84 0 0 1-5.65.42L2.4 14.72A10 10 0 1 0 12 2zm-3.3 13.9l-1.23-.51a2.13 2.13 0 0 0 3.94.17 2.13 2.13 0 0 0-1.8-2.93l1.27.53a1.57 1.57 0 1 1-1.2 2.9l-.98-.16zm6.6-6.58a2.52 2.52 0 1 0 0-5.04 2.52 2.52 0 0 0 0 5.04zm0-.63a1.89 1.89 0 1 1 0-3.78 1.89 1.89 0 0 1 0 3.78z"/></svg>Agregar a deseados en Steam</a>
+      <button class="btn sec" type="button" data-teaser data-e="16"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="M10 8.5v7l5.5-3.5z" fill="currentColor" stroke="none"/></svg>Ver teaser</button>
+    </div>
+    <p class="estado" data-e="17">En desarrollo · Fecha por anunciar</p>
+  </div>
+</header>
+
+<div class="datos"><div class="wrap">
+  <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg><span data-e="18">Un jugador</span></div>
+  <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span data-e="19">Una aventura de 4 a 5 horas</span></div>
+  <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg><span data-e="20">Español e inglés</span></div>
+</div></div>
+
+<section class="juego" id="juego" data-b="3">
+  <div class="wrap dos">
+    <div>
+      <p class="eti" data-e="21">El juego</p>
+      <h2 data-e="22">Lo que llevás con vos también es parte del viaje.</h2>
+      <p class="bajada" data-e="23">Una peregrinación entre bosques, templos y recuerdos. Sos una joven peregrina en su último rito de paso: un camino hacia el lugar de descanso de sus ancestros, donde el plano físico y el espiritual se entrelazan.</p>
+    </div>
+    <button class="teaser" type="button" data-teaser aria-label="Ver el teaser oficial"><img src="img/ss5.jpg" alt="" loading="lazy" data-e="24"><span class="play"><i></i><span data-e="25">Teaser oficial</span></span></button>
+  </div>
+</section>
+
+<section class="explora" id="explora" data-b="4">
+  <div class="wrap">
+    <p class="eti" data-e="26">Explorá</p>
+    <div class="cab"><h2 data-e="27">Dos planos para descubrir.</h2><p data-e="28">Saltá, explorá y resolvé desafíos que conectan ambos mundos. Proyectá tu espíritu al plano astral para revelar caminos ocultos, pero con cuidado: tu energía es limitada.</p></div>
+    <div class="planos">
+      <figure class="plano"><img src="img/ss3.jpg" alt="La peregrina frente a las ruinas, en el mundo físico" loading="lazy" data-e="29"><figcaption data-e="30">Explorá el mundo físico</figcaption></figure>
+      <figure class="plano"><img src="img/ss5.jpg" alt="La peregrina frente al portal, en el plano astral" loading="lazy" data-e="31"><figcaption data-e="32">Revelá caminos en el plano astral</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="galeria" id="imagenes" data-b="5">
+  <div class="wrap">
+    <p class="eti" data-e="33">Imágenes</p>
+    <h2 data-e="34">Bosques antiguos, templos olvidados y el plano astral.</h2>
+    <div class="grid">
+      <img src="img/ss1.jpg" alt="Bosque antiguo" loading="lazy" data-e="35">
+      <img src="img/ss2.jpg" alt="Ruinas entre el pasto" loading="lazy" data-e="36">
+      <img src="img/ss4.jpg" alt="Un pueblo junto al río" loading="lazy" data-e="37">
+      <img src="img/castillo.jpg" alt="Arte conceptual: las ruinas al atardecer" loading="lazy" data-e="38">
+      <img src="img/concept07.jpg" alt="Arte conceptual: el templo en el acantilado" loading="lazy" data-e="39">
+      <img src="img/bosque.jpg" alt="Arte conceptual: el bosque" loading="lazy" data-e="40">
+    </div>
+  </div>
+</section>
+
+<section class="cierre" data-b="6">
+  <img class="fondo" src="img/concept-1.jpg" alt="" loading="lazy" data-e="41">
+  <div class="wrap">
+    <h2 data-e="42">Guardá un lugar para este viaje.</h2>
+    <div class="ctas"><a class="btn claro" href="https://store.steampowered.com/app/4334100/Astral_Remembrance/" target="_blank" rel="noopener" data-e="43"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-9.98 9.33l5.36 2.22a2.84 2.84 0 0 1 1.6-.5h.16l2.39-3.46v-.05a3.78 3.78 0 1 1 3.78 3.78h-.09l-3.4 2.43v.13a2.84 2.84 0 0 1-5.65.42L2.4 14.72A10 10 0 1 0 12 2zm-3.3 13.9l-1.23-.51a2.13 2.13 0 0 0 3.94.17 2.13 2.13 0 0 0-1.8-2.93l1.27.53a1.57 1.57 0 1 1-1.2 2.9l-.98-.16zm6.6-6.58a2.52 2.52 0 1 0 0-5.04 2.52 2.52 0 0 0 0 5.04zm0-.63a1.89 1.89 0 1 1 0-3.78 1.89 1.89 0 0 1 0 3.78z"/></svg>Agregar a deseados en Steam</a></div>
+    <p class="nota" data-e="44">Steam te avisará cuando esté disponible.</p>
+  </div>
+</section>
+
+<section class="fechas" id="fechas" data-b="7">
+  <div class="wrap">
+    <p class="eti" data-e="45">Agenda</p>
+    <h2 data-e="46">Próximas fechas</h2>
+    <p class="bajada" data-e="47">Demos, ferias y eventos donde vas a poder jugarlo.</p>
+    <div id="sr-fechas" data-sr-fechas="spam-studio"><!-- sr-fechas -->
+<p class="nada">Pronto nuevas fechas.</p>
+<!-- /sr-fechas --></div>
+  </div>
+</section>
+
+<footer data-b="8">
+  <div class="wrap">
+    <a class="logo" href="https://spamstudios.net/" target="_blank" rel="noopener"><img src="img/spam.svg" alt="Spam Studios" data-e="48"><span data-e="49">Studios</span></a>
+    <div class="links"><a href="https://instagram.com/spam_studios" target="_blank" rel="noopener" data-e="50">@spam_studios</a><a href="https://spamstudios.net/" target="_blank" rel="noopener" data-e="51">Contacto</a><span data-e="52">© Spam Studios</span></div>
+  </div>
+</footer>
+
+<div id="modal" role="dialog" aria-label="Teaser de Astral Remembrance"><div class="caja"><button class="cerrar" type="button" aria-label="Cerrar" data-e="53">×</button><video id="video" controls playsinline poster="img/teaser.jpg"></video><p class="alt" data-e="54">Si el video no carga, <a href="https://store.steampowered.com/app/4334100/Astral_Remembrance/" target="_blank" rel="noopener" data-e="55">miralo en Steam</a>.</p></div></div>
+
+<script>
+(function(){
+  // teaser: el trailer de Steam en HLS (Safari lo reproduce solo; Chrome y Firefox con hls.js)
+  var HLS='https://video.akamai.steamstatic.com/store_trailers/4334100/1832032515/dc51d50c0d1e796339bfd06ded913d34525f45cf/1774541963/hls_h264.m3u8?t=1774543362';
+  var modal=document.getElementById('modal'), v=document.getElementById('video'), hls=null, listo=false;
+  function cargar(){ if(listo) return; listo=true;
+    if(v.canPlayType('application/vnd.apple.mpegurl')){ v.src=HLS; return; }
+    var s=document.createElement('script'); s.src='https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.5.13/hls.min.js';
+    s.onload=function(){ if(window.Hls&&Hls.isSupported()){ hls=new Hls(); hls.loadSource(HLS); hls.attachMedia(v); v.play().catch(function(){}); } };
+    document.head.appendChild(s); }
+  function abrir(){ modal.classList.add('abierto'); cargar(); v.play().catch(function(){}); }
+  function cerrar(){ modal.classList.remove('abierto'); v.pause(); }
+  document.querySelectorAll('[data-teaser]').forEach(function(b){ b.addEventListener('click',abrir); });
+  modal.querySelector('.cerrar').addEventListener('click',cerrar);
+  modal.addEventListener('click',function(e){ if(e.target===modal) cerrar(); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') cerrar(); });
+  // ES / EN en el nav: fija el idioma (idioma.js elige solo por país; esto lo pisa)
+  var ids=document.getElementById('idiomas');
+  function marcar(){ var l=(document.documentElement.lang||'es').slice(0,2); ids.querySelectorAll('a').forEach(function(a){ a.classList.toggle('act',a.dataset.lang===l); }); }
+  ids.querySelectorAll('a').forEach(function(a){ a.addEventListener('click',function(){ try{ localStorage.setItem('sr_lang',a.dataset.lang); }catch(e){} location.reload(); }); });
+  marcar(); new MutationObserver(marcar).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+})();
+</script>
+<script src="https://semillaredes.com/assets/idioma.js" defer></script>
+<script src="https://vm.semillaredes.com/web/editor.js" defer></script>
+</body>
+</html>
