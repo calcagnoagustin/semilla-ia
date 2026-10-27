@@ -15,9 +15,10 @@
 *{box-sizing:border-box}html,body{margin:0;background:var(--fondo);color:var(--tinta);font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.6}
 a{color:inherit}img{display:block;max-width:100%}
 .hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#222}
-.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:65% 30%}
 .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 30%,rgba(0,0,0,.72))}
 .hero .in{position:relative;z-index:1;width:100%;max-width:1080px;margin:0 auto;padding:0 24px calc(48px + env(safe-area-inset-bottom))}
+@media(min-width:900px){.hero{background:#15171b;align-items:center}.hero>img{left:auto;width:54%;object-position:center 25%}.hero:after{background:linear-gradient(90deg,#15171b 0%,#15171b 46%,rgba(21,23,27,.55) 52%,rgba(21,23,27,0) 66%)}.hero .in{padding:0 24px}.hero .in>*{max-width:520px}.hero h1{font-size:clamp(56px,6.4vw,88px)}.hero .bt.p{background:#fff;color:#15171b}}
 .kick{font:600 12px/1 Inter,sans-serif;letter-spacing:3px;text-transform:uppercase;opacity:.9;margin:0 0 14px}
 h1{font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:clamp(46px,9vw,96px);line-height:.98;letter-spacing:-1px;margin:0 0 14px}
 .baj{font-size:clamp(18px,2.4vw,22px);line-height:1.4;max-width:620px;margin:0 0 26px;opacity:.95}
@@ -48,7 +49,7 @@ footer a{color:var(--suave)}
 </head>
 <body>
 <header class="hero">
-  <img src="img/hero.jpg" alt="">
+  <img src="img/portada.jpg" alt="Abel Maldonado cantando">
   <div class="in">
     <p class="kick">Cantante en vivo</p>
     <h1>Abel Maldonado</h1>
