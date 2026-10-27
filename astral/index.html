@@ -242,18 +242,13 @@ footer a{text-decoration:none;color:var(--gris)}
   </div>
 </footer>
 
-<div id="modal" role="dialog" aria-label="Teaser de Astral Remembrance"><div class="caja"><button class="cerrar" type="button" aria-label="Cerrar" data-e="53">×</button><video id="video" controls playsinline poster="img/teaser.jpg"></video><p class="alt" data-e="54">Si el video no carga, <a href="https://store.steampowered.com/app/4334100/Astral_Remembrance/" target="_blank" rel="noopener" data-e="55">miralo en Steam</a>.</p></div></div>
+<div id="modal" role="dialog" aria-label="Teaser de Astral Remembrance"><div class="caja"><button class="cerrar" type="button" aria-label="Cerrar" data-e="53">×</button><video id="video" controls playsinline preload="none" poster="img/teaser.jpg"></video><p class="alt" data-e="54">Si el video no carga, <a href="https://store.steampowered.com/app/4334100/Astral_Remembrance/" target="_blank" rel="noopener" data-e="55">miralo en Steam</a>.</p></div></div>
 
 <script>
 (function(){
-  // teaser: el trailer de Steam en HLS (Safari lo reproduce solo; Chrome y Firefox con hls.js)
-  var HLS='https://video.akamai.steamstatic.com/store_trailers/4334100/1832032515/dc51d50c0d1e796339bfd06ded913d34525f45cf/1774541963/hls_h264.m3u8?t=1774543362';
-  var modal=document.getElementById('modal'), v=document.getElementById('video'), hls=null, listo=false;
-  function cargar(){ if(listo) return; listo=true;
-    if(v.canPlayType('application/vnd.apple.mpegurl')){ v.src=HLS; return; }
-    var s=document.createElement('script'); s.src='https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.5.13/hls.min.js';
-    s.onload=function(){ if(window.Hls&&Hls.isSupported()){ hls=new Hls(); hls.loadSource(HLS); hls.attachMedia(v); v.play().catch(function(){}); } };
-    document.head.appendChild(s); }
+  // teaser: mp4 propio (720p) cargado al abrir
+  var modal=document.getElementById('modal'), v=document.getElementById('video'), listo=false;
+  function cargar(){ if(listo) return; listo=true; v.src='img/teaser.mp4'; v.load(); }
   function abrir(){ modal.classList.add('abierto'); cargar(); v.play().catch(function(){}); }
   function cerrar(){ modal.classList.remove('abierto'); v.pause(); }
   document.querySelectorAll('[data-teaser]').forEach(function(b){ b.addEventListener('click',abrir); });
