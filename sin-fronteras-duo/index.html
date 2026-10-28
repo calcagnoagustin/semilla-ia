@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sin Fronteras Duo · Música popular y folklórica</title>
-<meta name="description" content="Recorremos pueblos de Sudamérica tocando zambaas, saya y folclore">
+<meta name="description" content="Recorremos pueblos de Sudamérica tocando zambas, saya y folclore">
 <meta property="og:title" content="Sin Fronteras Duo">
-<meta property="og:description" content="Recorremos pueblos de Sudamérica tocando zambaas, saya y folclore">
+<meta property="og:description" content="Recorremos pueblos de Sudamérica tocando zambas, saya y folclore">
 <meta property="og:image" content="https://semillaia.com/sin-fronteras-duo/img/hero.jpg">
 <link rel="icon" href="img/avatar.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,16 +14,16 @@
 :root{--fondo:#F6F1E9;--papel:#FFFDF8;--tinta:#1C1B22;--suave:#5D5A66;--acento:#846449;--linea:#E6DECF}
 *{box-sizing:border-box}html,body{margin:0;background:var(--fondo);color:var(--tinta);font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.6}
 a{color:inherit}img{display:block;max-width:100%}
-.hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#222}
-.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%}
-.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 30%,rgba(0,0,0,.72))}
-.hero .in{position:relative;z-index:1;width:100%;max-width:1080px;margin:0 auto;padding:0 24px calc(48px + env(safe-area-inset-bottom))}
-.kick{font:600 12px/1 Inter,sans-serif;letter-spacing:3px;text-transform:uppercase;opacity:.9;margin:0 0 14px}
-h1{font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:clamp(46px,9vw,96px);line-height:.98;letter-spacing:-1px;margin:0 0 14px}
-.baj{font-size:clamp(18px,2.4vw,22px);line-height:1.4;max-width:620px;margin:0 0 26px;opacity:.95}
+.hero{position:relative;min-height:88vh;display:flex;align-items:center;overflow:hidden;background:var(--fondo);color:var(--tinta)}
+.hero .in{position:relative;width:100%;max-width:1080px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr;gap:32px;align-items:center}
+.hero .foto{width:100%;max-width:420px;aspect-ratio:4/5;object-fit:cover;object-position:center 30%;border-radius:22px;box-shadow:0 30px 60px -30px rgba(28,27,34,.5);justify-self:center}
+@media(min-width:760px){.hero .in{grid-template-columns:1.15fr .85fr;gap:56px;padding:64px 24px}.hero .foto{justify-self:end;max-width:460px}}
+.kick{font:600 12px/1 Inter,sans-serif;letter-spacing:3px;text-transform:uppercase;color:var(--acento);margin:0 0 14px}
+h1{font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:clamp(46px,9vw,74px);line-height:1;letter-spacing:-1px;margin:0 0 14px}
+.baj{font-size:clamp(18px,2.4vw,22px);line-height:1.4;max-width:520px;margin:0 0 26px;color:var(--suave)}
 .bts{display:flex;flex-wrap:wrap;gap:12px}
 .bt{display:inline-flex;align-items:center;justify-content:center;height:52px;padding:0 24px;border-radius:999px;font:600 16px/1 Inter,sans-serif;text-decoration:none}
-.bt.p{background:var(--acento);color:#fff}.bt.s{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.55);backdrop-filter:blur(6px)}
+.bt.p{background:var(--acento);color:#fff}.bt.s{background:var(--papel);color:var(--tinta);border:1px solid var(--linea)}
 section{max-width:1080px;margin:0 auto;padding:64px 24px}
 h2{font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:clamp(32px,5vw,46px);line-height:1.05;margin:0 0 22px}
 .sobre{display:grid;grid-template-columns:1fr;gap:28px;align-items:start}
@@ -48,12 +48,14 @@ footer a{color:var(--suave)}
 </head>
 <body>
 <header class="hero" data-b="1">
-  <img src="img/hero.jpg" alt="" data-e="1">
   <div class="in">
+  <div>
     <p class="kick" data-e="2">Música popular y folklórica</p>
     <h1 data-e="3">Sin Fronteras Duo</h1>
-    <p class="baj" data-e="4">Recorremos pueblos de Sudamérica tocando zambaas, saya y folclore</p>
+    <p class="baj" data-e="4">Recorremos pueblos de Sudamérica tocando zambas, saya y folclore</p>
     <div class="bts"><a class="bt p" href="https://www.youtube.com/channel/UC9smzI6RSTagWGZ67LBDRVA" target="_blank" rel="noopener" data-e="5">Escúchanos en YouTube</a><a class="bt s" href="https://instagram.com/sinfronterasduo_" target="_blank" rel="noopener" data-e="6">@sinfronterasduo_</a></div>
+  </div>
+  <img class="foto" src="img/hero.jpg" alt="Sin Fronteras Duo" data-e="1">
   </div>
 </header>
 <section class="sobre" data-b="2">
