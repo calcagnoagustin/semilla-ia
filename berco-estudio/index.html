@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es-AR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BERCO · Estudio de Teatro</title><meta name="description" content="Escuela de teatro en Palermo: Entrenamiento Actoral, laboratorios y la obra Los Cuartos Oscuros.">
+<meta property="og:title" content="BERCO · Estudio de Teatro"><meta property="og:description" content="Escuela de teatro en Palermo: Entrenamiento Actoral, laboratorios y la obra Los Cuartos Oscuros."><meta property="og:image" content="https://semillaia.com/berco-estudio/img/hero.jpg"><meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--fondo:#0D0B10;--panel:#17141C;--linea:#2A2531;--texto:#F4EFE6;--suave:#B9B1A6;--oro:#F2C14E;--rosa:#FF4FA3;--cian:#4FD8E8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--fondo);color:var(--texto);font:400 17px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}a{color:inherit}
+.w{max-width:1120px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;z-index:20;background:rgba(13,11,16,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--linea)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:62px}
+.marca{font:700 15px/1 Inter;letter-spacing:4px}.marca span{font:400 italic 15px/1 "Playfair Display";letter-spacing:.3px;color:var(--suave);margin-left:8px}
+nav .ln{display:flex;gap:22px;font-size:14px;color:var(--suave)}nav .ln a{text-decoration:none}nav .ln a:hover{color:var(--texto)}
+@media(max-width:720px){nav .ln{display:none}}
+.btn{display:inline-flex;align-items:center;gap:9px;height:50px;padding:0 24px;border-radius:999px;font:600 15px/1 Inter;text-decoration:none;transition:transform .15s}
+.btn:hover{transform:translateY(-1px)}.btn.oro{background:var(--oro);color:#1A1405}.btn.borde{border:1px solid #4A4352;color:var(--texto)}
+.hero{position:relative;min-height:88vh;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:48px;padding-top:56px;padding-bottom:72px}
+.hero .eye{font:600 12px/1 Inter;letter-spacing:4px;text-transform:uppercase;color:var(--oro)}
+.hero h1{font:400 italic clamp(48px,7.2vw,96px)/.98 "Playfair Display";margin:18px 0 22px;letter-spacing:-1px}
+.hero h1 b{font-style:normal;font-weight:700;display:block}
+.hero p{color:var(--suave);font-size:19px;max-width:520px;margin:0 0 30px}
+.hero .acc{display:flex;flex-wrap:wrap;gap:12px}
+.hero .foto{position:relative;aspect-ratio:4/5;border-radius:28px;box-shadow:0 40px 90px rgba(0,0,0,.55)}
+.hero .foto img{width:100%;height:100%;object-fit:cover;border-radius:28px;filter:saturate(1.05) contrast(1.05)}
+.hero .foto:after{content:"";position:absolute;inset:0;border-radius:28px;background:radial-gradient(120% 80% at 50% 0%,transparent 55%,rgba(13,11,16,.6))}
+.hero .sello{position:absolute;left:-26px;bottom:34px;background:var(--rosa);color:#fff;font:700 13px/1.25 Inter;letter-spacing:1px;text-transform:uppercase;padding:14px 18px;border-radius:14px;transform:rotate(-4deg);box-shadow:0 14px 30px rgba(255,79,163,.35)}
+@media(max-width:860px){.hero{grid-template-columns:1fr;min-height:0;gap:34px;padding-top:34px;padding-bottom:56px}.hero .sello{left:14px}}
+section{padding:84px 0;border-top:1px solid var(--linea)}
+.tit{font:400 italic clamp(34px,4.6vw,56px)/1.05 "Playfair Display";margin:10px 0 18px}
+.eye2{font:600 12px/1 Inter;letter-spacing:4px;text-transform:uppercase;color:var(--suave)}
+.lead{color:var(--suave);max-width:640px;margin:0}
+.obra{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:center}
+.obra .afiches{position:relative}.obra .afiches img{border-radius:20px}
+.obra .afiches .b{position:absolute;width:46%;right:-18px;bottom:-26px;border:6px solid var(--fondo);transform:rotate(5deg)}
+.obra h3{font:800 clamp(34px,5vw,60px)/.95 Inter;letter-spacing:-1px;margin:8px 0 14px;background:linear-gradient(90deg,var(--rosa),var(--cian));-webkit-background-clip:text;background-clip:text;color:transparent}
+.obra .sin{font:400 italic 20px/1.5 "Playfair Display";color:var(--texto);margin:0 0 22px}
+.datos{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 26px}.datos span{border:1px solid #3A3442;border-radius:999px;padding:9px 15px;font-size:14px;color:var(--suave)}
+.elenco{font-size:14px;color:var(--suave);margin:0 0 26px}
+@media(max-width:860px){.obra{grid-template-columns:1fr}.obra .afiches{max-width:440px;margin-bottom:30px}.obra .afiches .b{right:6px}}
+.cursos{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
+.curso{background:var(--panel);border:1px solid var(--linea);border-radius:22px;overflow:hidden;display:flex;flex-direction:column}
+.curso img{aspect-ratio:4/5;object-fit:cover;width:100%}
+.curso .tx{padding:22px 22px 26px;display:flex;flex-direction:column;gap:8px;flex:1}
+.curso h4{font:400 italic 26px/1.15 "Playfair Display";margin:0}.curso .cu{font:600 12px/1 Inter;letter-spacing:2px;text-transform:uppercase;color:var(--oro)}
+.curso p{margin:0;color:var(--suave);font-size:15.5px}
+@media(max-width:900px){.cursos{grid-template-columns:1fr 1fr}}@media(max-width:600px){.cursos{grid-template-columns:1fr}}
+.cita{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.cita blockquote{margin:0;font:400 italic clamp(28px,3.6vw,42px)/1.25 "Playfair Display"}.cita blockquote b{color:var(--oro);font-weight:400}
+.cita img{border-radius:24px;aspect-ratio:1/1;object-fit:cover;width:100%}
+.cita .fir{margin-top:18px;color:var(--suave);font-size:15px}
+@media(max-width:860px){.cita{grid-template-columns:1fr}}
+.puestas{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.puestas figure{margin:0}.puestas img{border-radius:18px;aspect-ratio:1/1;object-fit:cover;width:100%}
+.puestas figcaption{margin-top:10px;font-size:14px;color:var(--suave)}
+@media(max-width:700px){.puestas{grid-template-columns:1fr 1fr}.puestas figure:last-child{grid-column:1/-1}}
+.equipo{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:36px}
+.persona{border:1px solid var(--linea);border-radius:22px;padding:26px}.persona h4{font:400 italic 28px/1.1 "Playfair Display";margin:0 0 6px}.persona p{margin:0;color:var(--suave)}
+.persona a{display:inline-block;margin-top:12px;color:var(--oro);text-decoration:none;font-weight:600;font-size:14px}
+@media(max-width:700px){.equipo{grid-template-columns:1fr}}
+.cierre{text-align:center;padding:100px 0;background:radial-gradient(60% 80% at 50% 0%,rgba(242,193,78,.14),transparent 70%)}
+.cierre .tit{max-width:760px;margin:12px auto 18px}.cierre .lead{margin:0 auto 30px}.cierre .acc{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
+footer{border-top:1px solid var(--linea);padding:28px 0;color:#7D7584;font-size:13.5px}footer .w{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+</style></head><body>
+
+<nav data-b="1"><div class="w"><div class="marca">BERCO<span data-e="1">Estudio de Teatro</span></div>
+<div class="ln"><a href="#obra" data-e="2">En cartel</a><a href="#formacion" data-e="3">Formación</a><a href="#puestas" data-e="4">Puestas</a><a href="#equipo" data-e="5">Equipo</a></div>
+<a class="btn oro" href="https://ig.me/m/berco.teatro" style="height:40px;padding:0 18px;font-size:14px" data-e="6">Probá una clase</a></div></nav>
+<header class="w hero" data-b="2">
+  <div><div class="eye">Escuela de teatro · Palermo, Buenos Aires</div>
+  <h1 data-e="7">La actuación<b>es un músculo.</b></h1>
+  <p data-e="8">Entrenamiento actoral, laboratorios y obras propias. Un espacio de investigación escénica donde cada actor y cada actriz desarrolla su propia poética.</p>
+  <div class="acc"><a class="btn oro" href="https://ig.me/m/berco.teatro" data-e="9">Probá una clase sin cargo <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn borde" href="#obra" data-e="10">Ver la obra en cartel</a></div></div>
+  <div class="foto"><img src="img/hero.jpg" alt="Escena de una puesta de Estudio BERCO" data-e="11"><div class="sello">Inscripciones<br>todo el año</div></div>
+</header>
+
+<section id="obra" data-b="3"><div class="w obra">
+  <div class="afiches"><img src="img/cuartos.jpg" alt="Afiche de Los Cuartos Oscuros" data-e="12"><img class="b" src="img/volvemos.jpg" alt="Volvemos" data-e="13"></div>
+  <div><div class="eye2">En cartel · Una comedia negra</div>
+  <h3 data-e="14">Los Cuartos Oscuros</h3>
+  <p class="sin" data-e="15">Tras una elección nacional descorazonadora, una actriz sin escenario les deja a sus hijas una nota en la heladera: «despiértenme cuando termine este mandato». Tres mujeres de un mismo linaje se repliegan frente a un mundo que ya no pueden reconocer, entre la paranoia, el deseo y el desconcierto.</p>
+  <div class="datos"><span data-e="16">Viernes 20 hs</span><span data-e="17">Octubre y noviembre</span><span data-e="18">Teatro Patio de Actores · Lerma 568</span></div>
+  <p class="elenco" data-e="19">Dramaturgia: Roxana Berco · Actúan: Roxana Berco, Pía Fonseca, María Valiente y Diego Torben · Dirección: Eug Krla y Roxana Berco</p>
+  <a class="btn oro" href="https://www.instagram.com/loscuartososcuros.obra/" data-e="20">Sacá tu entrada <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+</div></section>
+
+<section id="formacion" data-b="4"><div class="w">
+  <div class="eye2">Formación</div><h2 class="tit" data-e="21">Entrenar la escena, en presente.</h2>
+  <p class="lead" data-e="22">Trabajamos el cuerpo, la improvisación, la escucha, la relación con el espacio y el abordaje del texto. Para artistas escénicos, estudiantes, intérpretes, amantes del teatro y para quienes quieren empezar.</p>
+  <div class="cursos">
+    <div class="curso"><img src="img/entrenamiento.jpg" alt="Entrenamiento Actoral" data-e="23"><div class="tx"><span class="cu" data-e="24">Taller anual</span><h4 data-e="25">Entrenamiento Actoral</h4><p data-e="26">Teatro y creación escénica. Lunes de 20 a 22:30 hs en Palermo. Con Roxana Berco y María Valiente. Probá una clase sin cargo y sin compromiso.</p></div></div>
+    <div class="curso"><img src="img/cine.jpg" alt="Poéticas del Cine" data-e="27"><div class="tx"><span class="cu" data-e="28">Laboratorio</span><h4 data-e="29">Poéticas del Cine</h4><p data-e="30">Investigación escénica a partir de Greta Gerwig, Joachim Trier y Federico Fellini. Sábados de 14 a 16:30 hs en Teatro Patio de Actores. El material audiovisual se entrega a cada participante.</p></div></div>
+    <div class="curso"><img src="img/clase.jpg" alt="Clase en Estudio BERCO" data-e="31"><div class="tx"><span class="cu" data-e="32">Seminarios mensuales</span><h4 data-e="33">Monólogos, gestos y biografías</h4><p data-e="34">Encuentros intensivos para profundizar en la presencia escénica, el monólogo como estructura abierta, el lenguaje de los gestos y lo biográfico como archivo secreto.</p></div></div>
+  </div>
+</div></section>
+
+<section data-b="5"><div class="w cita">
+  <div><blockquote data-e="35">«La escena en teatro sucede en presente, porque el teatro <b>es</b> tiempo presente. Y lo central en mi presente es el otro.»</blockquote><div class="fir">— De las clases de Entrenamiento Actoral</div></div>
+  <img src="img/escena.jpg" alt="Roxana Berco en escena" data-e="36">
+</div></section>
+
+<section id="puestas" data-b="6"><div class="w">
+  <div class="eye2">Puestas anuales</div><h2 class="tit" data-e="37">Lo que crean nuestros grupos.</h2>
+  <p class="lead" data-e="38">Cada año los grupos estrenan una creación propia en Teatro Patio de Actores.</p>
+  <div class="puestas">
+    <figure><img src="img/ventanal.jpg" alt="El Ventanal" data-e="39"><figcaption data-e="40">El Ventanal (2025) · a partir de textos de Arlt, Castillo y Beckett</figcaption></figure>
+    <figure><img src="img/salud.jpg" alt="La salud de los enfermos" data-e="41"><figcaption data-e="42">La salud de los enfermos (2024) · adaptación de Cortázar</figcaption></figure>
+    <figure><img src="img/fragmento.jpg" alt="Fragmento de un apocalipsis en temporada baja" data-e="43"><figcaption data-e="44">fragmento de un apocalipsis en temporada baja (2024)</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="equipo" data-b="7"><div class="w">
+  <div class="eye2">Quiénes dan clase</div><h2 class="tit" data-e="45">Equipo</h2>
+  <div class="equipo">
+    <div class="persona"><h4 data-e="46">Roxana Berco</h4><p data-e="47">Directora del estudio, actriz, dramaturga y directora.</p><a href="https://www.instagram.com/roxanaberco/" data-e="48">@roxanaberco</a></div>
+    <div class="persona"><h4 data-e="49">María Valiente</h4><p data-e="50">Actriz y profesora adjunta de Entrenamiento Actoral.</p><a href="https://www.instagram.com/mariaenelpais/" data-e="51">@mariaenelpais</a></div>
+  </div>
+</div></section>
+
+<section class="cierre" data-b="8"><div class="w">
+  <div class="eye2">Palermo · Bonpland y Honduras</div>
+  <h2 class="tit" data-e="52">Tu primera clase es sin cargo.</h2>
+  <p class="lead" data-e="53">Escribinos y te pasamos horarios, valores y toda la info.</p>
+  <div class="acc"><a class="btn oro" href="https://ig.me/m/berco.teatro" data-e="54"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> Escribinos por Instagram</a><a class="btn borde" href="mailto:bercoteatro@gmail.com" data-e="55"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg> bercoteatro@gmail.com</a></div>
+</div></section>
+<footer data-b="9"><div class="w"><span data-e="56">BERCO · Estudio de Teatro · Buenos Aires</span><a href="https://www.instagram.com/berco.teatro/" style="text-decoration:none" data-e="57">@berco.teatro</a></div></footer>
+<script src="https://vm.semillaredes.com/web/editor.js" defer></script>
+</body></html>
