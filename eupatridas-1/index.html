@@ -3,71 +3,249 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Eupátridas · Música</title>
-<meta name="description" content="Música que salió del monte, con grillos reales y una madre loba.">
+<title>Eupátridas · Música que salió del monte</title>
+<meta name="description" content="Eupátridas: música que salió del monte, con grillos reales y una madre loba. 1998–2008. Lo que quedó está en la playlist.">
 <meta property="og:title" content="Eupátridas">
-<meta property="og:description" content="Música que salió del monte, con grillos reales y una madre loba.">
+<meta property="og:description" content="Música que salió del monte, con grillos reales y una madre loba. Cambiá tu vida escuchando Eupátridas.">
 <meta property="og:image" content="https://semillaia.com/eupatridas-1/img/hero.jpg">
 <link rel="icon" href="img/avatar.jpg">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,600&display=swap" rel="stylesheet">
 <style>
-:root{--fondo:#F6F1E9;--papel:#FFFDF8;--tinta:#1C1B22;--suave:#5D5A66;--acento:#A76C31;--linea:#E6DECF}
-*{box-sizing:border-box}html,body{margin:0;background:var(--fondo);color:var(--tinta);font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.6}
+:root{--negro:#0A0A0B;--negro2:#141416;--hueso:#EDE6D6;--hueso2:#BDB5A4;--monte:#9DBE5A;--cosmo:#A98BFF;--linea:rgba(237,230,214,.16);--w:1120px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+html,body{margin:0;background:var(--negro);color:var(--hueso);font-family:'Space Mono',ui-monospace,monospace;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 a{color:inherit}img{display:block;max-width:100%}
-.hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#222}
-.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%}
-.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 30%,rgba(0,0,0,.72))}
-.hero .in{position:relative;z-index:1;width:100%;max-width:1080px;margin:0 auto;padding:0 24px calc(48px + env(safe-area-inset-bottom))}
-.kick{font:600 12px/1 Inter,sans-serif;letter-spacing:3px;text-transform:uppercase;opacity:.9;margin:0 0 14px}
-h1{font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:clamp(46px,9vw,96px);line-height:.98;letter-spacing:-1px;margin:0 0 14px}
-.baj{font-size:clamp(18px,2.4vw,22px);line-height:1.4;max-width:620px;margin:0 0 26px;opacity:.95}
-.bts{display:flex;flex-wrap:wrap;gap:12px}
-.bt{display:inline-flex;align-items:center;justify-content:center;height:52px;padding:0 24px;border-radius:999px;font:600 16px/1 Inter,sans-serif;text-decoration:none}
-.bt.p{background:var(--acento);color:#fff}.bt.s{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.55);backdrop-filter:blur(6px)}
-section{max-width:1080px;margin:0 auto;padding:64px 24px}
-h2{font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:clamp(32px,5vw,46px);line-height:1.05;margin:0 0 22px}
-.sobre{display:grid;grid-template-columns:1fr;gap:28px;align-items:start}
-.sobre .av{width:132px;height:132px;border-radius:50%;object-fit:cover;border:4px solid var(--papel);box-shadow:0 10px 30px -12px rgba(0,0,0,.35)}
-.sobre p{margin:0 0 14px;color:#33313B;max-width:640px}
-blockquote{margin:26px 0 0;padding:0 0 0 18px;border-left:3px solid var(--acento);font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:22px;line-height:1.35}
-.sp{width:100%;height:380px;border:0;border-radius:14px;display:block}
-.yt{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#000}.yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.gal.g2{grid-template-columns:repeat(2,1fr);max-width:640px}
-.ph{aspect-ratio:1;overflow:hidden;border-radius:6px;background:#ddd}.ph img{width:100%;height:100%;object-fit:cover;transition:transform .4s}.ph:hover img{transform:scale(1.04)}
-.mas{margin:18px 0 0;font-weight:600}
-.fechas{background:var(--papel);border:1px solid var(--linea);border-radius:20px;padding:28px 24px}
-#sr-fechas ul{list-style:none;margin:0;padding:0}#sr-fechas li{padding:12px 0;border-bottom:1px solid var(--linea)}#sr-fechas li:last-child{border:0}
-.lks{display:flex;flex-direction:column;gap:10px;max-width:560px}
-.lks a{display:flex;align-items:center;justify-content:space-between;background:var(--papel);border:1px solid var(--linea);border-radius:14px;padding:0 20px;height:58px;text-decoration:none;font-weight:600}
-.lks a span{color:var(--acento)}
-.cierre{text-align:center}.cierre .bts{justify-content:center}.cierre .bt.s{color:var(--tinta);border-color:var(--linea);background:var(--papel)}
-footer{text-align:center;color:var(--suave);font-size:13.5px;padding:28px 24px calc(28px + env(safe-area-inset-bottom));border-top:1px solid var(--linea)}
-footer a{color:var(--suave)}
-@media(min-width:820px){.sobre{grid-template-columns:180px 1fr;gap:48px}.sobre .av{width:180px;height:180px}.gal{gap:10px}}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 24px}
+h1,h2{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.01em;margin:0;line-height:1.04}
+h2{font-size:clamp(44px,8vw,96px)}
+.num{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--monte);margin:0 0 18px}
+.serif{font-family:Fraunces,Georgia,serif;font-style:italic;font-weight:400}
+.btn{display:inline-flex;align-items:center;gap:10px;height:52px;padding:0 26px;background:var(--monte);color:var(--negro);text-decoration:none;font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--monte)}
+.btn:hover{background:var(--hueso);border-color:var(--hueso)}
+.btn.sec{background:transparent;color:var(--hueso);border-color:var(--linea)}
+.btn.sec:hover{border-color:var(--hueso);background:transparent}
+.lnk{text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
+.lnk:hover{color:var(--monte)}
+section{padding:88px 0}
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:40;mix-blend-mode:difference}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+nav .logo{font-family:Anton,sans-serif;font-size:22px;letter-spacing:.06em;text-decoration:none;text-transform:uppercase}
+nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;font-size:12px;letter-spacing:.16em;text-transform:uppercase}
+nav ul a{text-decoration:none}
+nav ul li.op{display:none}
+@media(min-width:760px){nav ul li.op{display:list-item}}
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%;filter:grayscale(.15) contrast(1.05)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,11,.15) 0%,rgba(10,10,11,.1) 40%,rgba(10,10,11,.92) 85%,var(--negro) 100%)}
+.hero .wrap{position:relative;z-index:1;width:100%;padding-bottom:56px}
+h1{font-size:clamp(76px,17vw,220px);line-height:.82;letter-spacing:-.005em}
+.hero .tag{font-size:clamp(17px,2vw,21px);max-width:520px;margin:22px 0 28px}
+.hero .tag .serif{font-size:1.15em}
+.hero .acc{display:flex;flex-wrap:wrap;gap:12px}
+.hero .años{position:absolute;right:24px;top:84px;z-index:1;font-size:12px;letter-spacing:.24em;writing-mode:vertical-rl;color:var(--hueso2)}
+/* cinta */
+.cinta{border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);overflow:hidden;white-space:nowrap;padding:14px 0;font-family:Anton,sans-serif;font-size:22px;letter-spacing:.06em;text-transform:uppercase}
+.cinta span{display:inline-block;animation:corre 38s linear infinite;padding-left:100%}
+.cinta i{font-style:normal;color:var(--monte);margin:0 18px}
+@keyframes corre{to{transform:translateX(-100%)}}
+@media(prefers-reduced-motion:reduce){.cinta span{animation:none;padding-left:24px}}
+/* escucha */
+.esc .wrap{display:grid;grid-template-columns:1fr;gap:40px}
+.lista{list-style:none;margin:0;padding:0;border-top:1px solid var(--linea)}
+.lista li{border-bottom:1px solid var(--linea)}
+.lista button{all:unset;box-sizing:border-box;width:100%;display:grid;grid-template-columns:44px 1fr auto;gap:12px;align-items:center;padding:14px 4px;cursor:pointer;font-size:16px}
+.lista button:hover,.lista button.act{color:var(--monte)}
+.lista b{font-weight:400;font-size:12px;color:var(--hueso2);letter-spacing:.1em}
+.lista button.act b{color:var(--monte)}
+.lista em{font-style:normal;font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:0}
+.lista button:hover em,.lista button.act em{opacity:1}
+.player{position:sticky;top:84px;align-self:start}
+.player iframe{display:block;width:100%;height:352px;border:0;border-radius:14px;background:var(--negro2)}
+.player .pie{font-size:12px;color:var(--hueso2);margin:12px 0 0;letter-spacing:.06em}
+@media(min-width:900px){.esc .wrap{grid-template-columns:1fr 1fr;gap:64px}}
+/* leyenda */
+.ley{background:var(--hueso);color:var(--negro)}
+.ley .num{color:#4E6A1F}
+.ley .wrap{display:grid;grid-template-columns:1fr;gap:40px;align-items:start}
+.ley .foto img{width:100%;aspect-ratio:1;object-fit:cover;filter:grayscale(1) contrast(1.1)}
+.ley .foto p{font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin:10px 0 0;color:#6B6458}
+.linea{list-style:none;margin:28px 0 0;padding:0;border-top:1px solid rgba(10,10,11,.18)}
+.linea li{display:grid;grid-template-columns:92px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid rgba(10,10,11,.18);align-items:baseline}
+.linea b{font-family:Anton,sans-serif;font-weight:400;font-size:26px;letter-spacing:.02em}
+.ley .cierre{font-size:clamp(24px,3vw,34px);line-height:1.2;margin:28px 0 0}
+@media(min-width:900px){.ley .wrap{grid-template-columns:.85fr 1.15fr;gap:72px}}
+/* monte */
+.monte{position:relative;overflow:hidden}
+.monte .wrap{display:grid;grid-template-columns:1fr;gap:36px;align-items:center}
+.monte blockquote{margin:0;font-family:Fraunces,Georgia,serif;font-style:italic;font-size:clamp(28px,4vw,48px);line-height:1.12}
+.monte blockquote em{color:var(--monte);font-style:italic}
+.monte p{color:var(--hueso2);max-width:440px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.duo img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.duo img:last-child{margin-top:48px}
+@media(min-width:900px){.monte .wrap{grid-template-columns:1.1fr .9fr;gap:72px}}
+/* cosmo */
+.cosmo{position:relative;min-height:80svh;display:flex;align-items:center;overflow:hidden;text-align:center}
+.cosmo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.cosmo:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,rgba(10,10,11,.25),rgba(10,10,11,.85))}
+.cosmo .wrap{position:relative;z-index:1}
+.cosmo h2{font-size:clamp(48px,10vw,128px)}
+.cosmo p{max-width:520px;margin:20px auto 30px}
+/* ultimo */
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.gal a{aspect-ratio:4/5;overflow:hidden;background:var(--negro2);position:relative}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .6s;filter:grayscale(.3)}
+.gal a:hover img{transform:scale(1.04);filter:none}
+.gal span{position:absolute;left:10px;bottom:10px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;background:var(--negro);padding:4px 8px}
+@media(min-width:760px){.gal{grid-template-columns:repeat(4,1fr)}}
+.cab{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:30px}
+/* fechas */
+.fechas{border-top:1px solid var(--linea)}
+.fechas .wrap{display:grid;grid-template-columns:1fr;gap:28px}
+#sr-fechas .nada{margin:0;font-size:18px;color:var(--hueso2)}
+#sr-fechas .lista{border-top:1px solid var(--linea)}
+#sr-fechas .fe{display:grid;grid-template-columns:70px 1fr auto;gap:14px;align-items:center;padding:16px 0;border-bottom:1px solid var(--linea);text-decoration:none}
+#sr-fechas .dia{text-align:center;line-height:1}#sr-fechas .dia b{display:block;font-family:Anton,sans-serif;font-weight:400;font-size:34px}#sr-fechas .dia small{font-size:11px;letter-spacing:.2em;color:var(--monte)}
+#sr-fechas .tit small{display:block;color:var(--hueso2);font-size:13px}
+#sr-fechas .lnk{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--monte);border:0}
+@media(min-width:900px){.fechas .wrap{grid-template-columns:.8fr 1.2fr;gap:64px}}
+/* contacto */
+.contacto{background:var(--monte);color:var(--negro);text-align:center}
+.contacto .num{color:var(--negro);opacity:.7}
+.contacto h2{font-size:clamp(48px,9vw,112px)}
+.contacto p{max-width:460px;margin:18px auto 28px}
+.contacto .bts{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.contacto .btn{background:var(--negro);color:var(--hueso);border-color:var(--negro)}
+.contacto .btn.sec{background:transparent;color:var(--negro);border-color:rgba(10,10,11,.4)}
+footer{padding:22px 0;font-size:12px;color:var(--hueso2);letter-spacing:.06em}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 </style>
 </head>
 <body>
-<header class="hero" data-b="1">
-  <img src="img/hero.jpg" alt="" data-e="1">
-  <div class="in">
-    <p class="kick" data-e="2">Música</p>
-    <h1 data-e="3">Eupátridas</h1>
-    <p class="baj" data-e="4">Música que salió del monte, con grillos reales y una madre loba.</p>
-    <div class="bts"><a class="bt p" href="https://open.spotify.com/artist/0hGivWkaj7YKYlVmSHVGVB" target="_blank" rel="noopener" data-e="5">Escuchanos en Spotify</a><a class="bt s" href="https://instagram.com/eupatridasok" target="_blank" rel="noopener" data-e="6">@eupatridasok</a></div>
+<nav data-b="1"><div class="wrap"><a class="logo" href="#" data-e="1">Eupátridas</a><ul data-b="2"><li class="op"><a href="#escucha" data-e="2">Escuchá</a></li><li class="op"><a href="#leyenda" data-e="3">Leyenda</a></li><li><a href="#contacto" data-e="4">Contacto</a></li></ul></div></nav>
+
+<header class="hero" data-b="3">
+  <img class="bg" src="img/hero.jpg" alt="Eupátridas" data-e="5">
+  <span class="años" data-e="6">1998 — 2008 — siempre</span>
+  <div class="wrap">
+    <p class="num" data-e="7">Música</p>
+    <h1 data-e="8">Eupá<br>tridas</h1>
+    <p class="tag" data-e="9">Música que salió del monte, con grillos reales y <span class="serif">una madre loba.</span></p>
+    <div class="acc"><a class="btn" href="#escucha" data-e="10">▶ Escuchá</a><a class="btn sec" href="https://instagram.com/eupatridasok" target="_blank" rel="noopener" data-e="11">@eupatridasok</a></div>
   </div>
 </header>
-<section class="sobre" data-b="2">
-  <img class="av" src="img/avatar.jpg" alt="" data-e="7">
-  <div><h2 data-e="8">Sobre nosotros</h2><p data-e="9">Una madre loba nos alimentó hasta los 20 años. En 1998 salimos por primera vez al mundo y en 2008 desaparecimos para siempre. Lo que quedó está en la playlist.</p><p data-e="10">Gente real metida en el monte, grabando grillos reales: hojas, puchitos, flores, vuelo nocturno. Escuchala, y quién sabe, capaz te cambia la vida.</p><blockquote data-e="11">Cambiá tu vida escuchando Eupátridas.</blockquote></div>
+
+<div class="cinta" aria-hidden="true"><span data-e="12">Cambiá tu vida escuchando Eupátridas <i>✦</i> Grillos reales <i>✦</i> Hojas, puchitos, flores, vuelo nocturno <i>✦</i> Temo temer <i>✦</i> Astrodisco <i>✦</i> Cambiá tu vida escuchando Eupátridas <i>✦</i> Grillos reales <i>✦</i> Hojas, puchitos, flores, vuelo nocturno <i>✦</i></span></div>
+
+<section class="esc" id="escucha" data-b="4">
+  <div class="wrap">
+    <div>
+      <p class="num" data-e="13">01 / Escuchá</p>
+      <h2 data-e="14">Lo que<br>quedó</h2>
+      <p style="color:var(--hueso2);max-width:420px;margin:20px 0 26px" data-e="15">Tocá un tema y sonará acá al lado. Todo está en Spotify.</p>
+      <ol class="lista" id="temas" data-b="5">
+        <li><button type="button" data-t="2IqXdBGllu3VlSDzhypaJy" class="act"><b data-e="16">01</b><span data-e="17">Espejo x Mirarte</span><em data-e="18">Sonando</em></button></li>
+        <li><button type="button" data-t="2dANvdz8R4QEwTYhEaUEd6"><b data-e="19">02</b><span data-e="20">Condensador microfón</span><em data-e="21">▶</em></button></li>
+        <li><button type="button" data-t="0V9AduxafMPEQ5uCFR2Fxb"><b data-e="22">03</b><span data-e="23">Mato</span><em data-e="24">▶</em></button></li>
+        <li><button type="button" data-t="2LBrrsPv4BwRBGI6hA4X5V"><b data-e="25">04</b><span data-e="26">Ierindore</span><em data-e="27">▶</em></button></li>
+        <li><button type="button" data-t="3kCYllLxLPj2XfGjeQTT8i"><b data-e="28">05</b><span data-e="29">Temo temer</span><em data-e="30">▶</em></button></li>
+        <li><button type="button" data-t="6msoeHHkGyJ8An3QMO8RkF"><b data-e="31">06</b><span data-e="32">Astrodisco</span><em data-e="33">▶</em></button></li>
+        <li><button type="button" data-t="6UTuCVOWQDcyARqRvrsmEc"><b data-e="34">07</b><span data-e="35">Bluminá</span><em data-e="36">▶</em></button></li>
+        <li><button type="button" data-t="4kP6T9gkD6Re5iUb7jIBae"><b data-e="37">08</b><span data-e="38">Intervalo</span><em data-e="39">▶</em></button></li>
+        <li><button type="button" data-t="47YcSZQDF4DFPRSTwTy78F"><b data-e="40">09</b><span data-e="41">Grillos</span><em data-e="42">▶</em></button></li>
+        <li><button type="button" data-t="2XV3IctyccZqrffsDO7kIi"><b data-e="43">10</b><span data-e="44">4DP</span><em data-e="45">▶</em></button></li>
+      </ol>
+    </div>
+    <div class="player">
+      <iframe id="sp" src="https://open.spotify.com/embed/track/2IqXdBGllu3VlSDzhypaJy?utm_source=semillaia&theme=0" title="Eupátridas en Spotify" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+      <p class="pie"><a class="lnk" href="https://open.spotify.com/artist/0hGivWkaj7YKYlVmSHVGVB" target="_blank" rel="noopener" data-e="46">Seguinos en Spotify ↗</a></p>
+    </div>
+  </div>
 </section>
-<section data-b="3"><h2 data-e="12">Escuchá</h2><iframe class="sp" src="https://open.spotify.com/embed/artist/0hGivWkaj7YKYlVmSHVGVB?utm_source=semillaia&theme=0" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe><p class="mas"><a href="https://open.spotify.com/artist/0hGivWkaj7YKYlVmSHVGVB" target="_blank" rel="noopener" data-e="13">Seguime en Spotify →</a></p></section><section data-b="4"><h2 data-e="14">Lo último</h2><div class="gal g2"><a class="ph" href="https://www.instagram.com/p/DaivzI2I0oN/" target="_blank" rel="noopener"><img src="img/p1.jpg" alt="" loading="lazy" data-e="15"></a><a class="ph" href="https://www.instagram.com/reel/Daiun18ozRY/" target="_blank" rel="noopener"><img src="img/p2.jpg" alt="" loading="lazy" data-e="16"></a><a class="ph" href="https://www.instagram.com/reel/DYatRvPoK1V/" target="_blank" rel="noopener"><img src="img/p3.jpg" alt="" loading="lazy" data-e="17"></a><a class="ph" href="https://www.instagram.com/reel/DYKxAWQo6hE/" target="_blank" rel="noopener"><img src="img/p4.jpg" alt="" loading="lazy" data-e="18"></a></div><p class="mas"><a href="https://instagram.com/eupatridasok" target="_blank" rel="noopener" data-e="19">Ver más en Instagram →</a></p></section><section data-b="5"><div class="fechas"><h2 data-e="20">Próximas fechas</h2><div id="sr-fechas"><!-- sr-fechas -->
-<p class="nada">Pronto nuevas fechas.</p>
-<!-- /sr-fechas --></div></div></section>
-<section class="cierre" data-b="6">
-  <h2 data-e="21">Sigamos en contacto</h2>
-  <div class="bts"><a class="bt p" href="https://instagram.com/eupatridasok" target="_blank" rel="noopener" data-e="22">Instagram</a><a class="bt s" href="https://open.spotify.com/artist/0hGivWkaj7YKYlVmSHVGVB" target="_blank" rel="noopener" data-e="23">Spotify</a></div>
+
+<section class="ley" id="leyenda" data-b="6">
+  <div class="wrap">
+    <div class="foto"><img src="img/avatar.jpg" alt="Eupátridas" loading="lazy" data-e="47"><p data-e="48">Archivo · Eupátridas</p></div>
+    <div>
+      <p class="num" data-e="49">02 / La leyenda</p>
+      <h2 data-e="50">Una madre<br>loba</h2>
+      <ol class="linea" data-b="7">
+        <li><b data-e="51">Antes</b><span data-e="52">Una madre loba nos alimentó hasta los 20 años.</span></li>
+        <li><b data-e="53">1998</b><span data-e="54">Salimos por primera vez al mundo.</span></li>
+        <li><b data-e="55">2008</b><span data-e="56">Desaparecimos para siempre.</span></li>
+        <li><b data-e="57">Hoy</b><span data-e="58">Lo que quedó está en la playlist.</span></li>
+      </ol>
+      <p class="cierre serif" data-e="59">Escuchala, y quién sabe, capaz te cambia la vida.</p>
+    </div>
+  </div>
 </section>
-<footer data-b="7">© 2026 Eupátridas · Hecha con <a href="https://semillaia.com" target="_blank" rel="noopener" data-e="24">SemillaIA</a></footer>
+
+<section class="monte" data-b="8">
+  <div class="wrap">
+    <div>
+      <p class="num" data-e="60">03 / El monte</p>
+      <blockquote data-e="61">Gente real metida en el monte grabando <em>grillos reales.</em></blockquote>
+      <p style="margin-top:22px" data-e="62">Hojas, puchitos, flores, vuelo nocturno.</p>
+    </div>
+    <div class="duo"><img src="img/p3.jpg" alt="" loading="lazy" data-e="63"><img src="img/p2.jpg" alt="" loading="lazy" data-e="64"></div>
+  </div>
+</section>
+
+<section class="cosmo" data-b="9">
+  <img src="img/p4.jpg" alt="" loading="lazy" data-e="65">
+  <div class="wrap">
+    <p class="num" style="color:var(--hueso)" data-e="66">✦ ✦ ✦</p>
+    <h2 data-e="67">Cambiá tu vida<br>escuchando<br>Eupátridas</h2>
+    <p data-e="68">Diez temas para entrar al monte con auriculares.</p>
+    <a class="btn" href="https://open.spotify.com/artist/0hGivWkaj7YKYlVmSHVGVB" target="_blank" rel="noopener" data-e="69">Abrir en Spotify ↗</a>
+  </div>
+</section>
+
+<section id="ultimo" data-b="10">
+  <div class="wrap">
+    <div class="cab"><div><p class="num" data-e="70">04 / Lo último</p><h2 data-e="71">En Instagram</h2></div><a class="lnk" href="https://instagram.com/eupatridasok" target="_blank" rel="noopener" data-e="72">@eupatridasok ↗</a></div>
+    <div class="gal">
+      <a href="https://www.instagram.com/p/DaivzI2I0oN/" target="_blank" rel="noopener"><img src="img/p1.jpg" alt="" loading="lazy" data-e="73"><span data-e="74">Triple de amiga</span></a>
+      <a href="https://www.instagram.com/reel/Daiun18ozRY/" target="_blank" rel="noopener"><img src="img/p2.jpg" alt="" loading="lazy" data-e="75"><span data-e="76">Grillos reales</span></a>
+      <a href="https://www.instagram.com/reel/DYatRvPoK1V/" target="_blank" rel="noopener"><img src="img/p3.jpg" alt="" loading="lazy" data-e="77"><span data-e="78">Temo temer</span></a>
+      <a href="https://www.instagram.com/reel/DYKxAWQo6hE/" target="_blank" rel="noopener"><img src="img/p4.jpg" alt="" loading="lazy" data-e="79"><span data-e="80">Cambiá tu vida</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="fechas" id="fechas" data-b="11">
+  <div class="wrap">
+    <div><p class="num" data-e="81">05 / Fechas</p><h2 data-e="82">¿Vuelven?</h2></div>
+    <div id="sr-fechas"><!-- sr-fechas --><p class="nada">Pronto nuevas fechas.</p><!-- /sr-fechas --></div>
+  </div>
+</section>
+
+<section class="contacto" id="contacto" data-b="12">
+  <div class="wrap">
+    <p class="num" data-e="83">06 / Contacto</p>
+    <h2 data-e="84">Escribinos</h2>
+    <p data-e="85">Para prensa, fechas o para contarnos cómo te cambió la vida.</p>
+    <div class="bts"><a class="btn" href="https://instagram.com/eupatridasok" target="_blank" rel="noopener" data-e="86">Instagram</a><a class="btn sec" href="https://open.spotify.com/artist/0hGivWkaj7YKYlVmSHVGVB" target="_blank" rel="noopener" data-e="87">Spotify</a></div>
+  </div>
+</section>
+<footer data-b="13"><div class="wrap"><span data-e="88">© 2026 Eupátridas</span><span data-e="89">Hecha con <a href="https://semillaia.com" target="_blank" rel="noopener" data-e="90">SemillaIA</a></span></div></footer>
+
+<script>
+(function(){
+  var sp=document.getElementById('sp'),bs=document.querySelectorAll('#temas button');
+  bs.forEach(function(b){b.addEventListener('click',function(){
+    try{if(/[?&]editar=/.test(location.search)||sessionStorage.getItem('sr_editar'))return;}catch(x){}
+    bs.forEach(function(o){o.classList.remove('act');o.querySelector('em').textContent='▶'});
+    b.classList.add('act');b.querySelector('em').textContent='Sonando';
+    sp.src='https://open.spotify.com/embed/track/'+b.dataset.t+'?utm_source=semillaia&theme=0';
+    if(innerWidth<900)sp.scrollIntoView({behavior:'smooth',block:'center'});
+  })});
+})();
+</script>
 <script src="https://vm.semillaredes.com/web/editor.js" defer></script>
 <script src="https://semillaredes.com/assets/idioma.js" defer></script>
 </body>
