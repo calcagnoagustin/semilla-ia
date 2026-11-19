@@ -3,71 +3,258 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Jimena Mercedes · Artista visual y cantante</title>
-<meta name="description" content="Música, pintura e intuición. Donde el sonido se transforma en color.">
-<meta property="og:title" content="Jimena Mercedes">
-<meta property="og:description" content="Música, pintura e intuición. Donde el sonido se transforma en color.">
-<meta property="og:image" content="https://semillaia.com/jimena-mercedes/img/hero.jpg">
+<title>Jimena Mercedes · Música a la Obra y obra original</title>
+<meta name="description" content="Música a la Obra: taller de pintura intuitiva inspirada en la música, en Paternal, CABA. Obras originales y obra a pedido de Jimena Mercedes, artista visual y cantante.">
+<meta property="og:title" content="Jimena Mercedes · Música a la Obra">
+<meta property="og:description" content="Taller de pintura intuitiva a partir de la música. 4 encuentros, materiales y bastidor incluidos. Obras originales y a pedido.">
+<meta property="og:image" content="https://semillaia.com/jimena-mercedes/img/mao-1.jpg">
 <link rel="icon" href="img/avatar.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--fondo:#F6F1E9;--papel:#FFFDF8;--tinta:#1C1B22;--suave:#5D5A66;--acento:#7A482D;--linea:#E6DECF}
-*{box-sizing:border-box}html,body{margin:0;background:var(--fondo);color:var(--tinta);font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.6}
+:root{--fondo:#F6F1E9;--papel:#FFFDF8;--tinta:#1C1B22;--suave:#5D5A66;--acento:#7A482D;--acento2:#EADBCB;--linea:#E6DECF}
+*{box-sizing:border-box}html{scroll-behavior:smooth}html,body{margin:0;background:var(--fondo);color:var(--tinta);font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.6}
 a{color:inherit}img{display:block;max-width:100%}
-.hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#222}
-.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%}
-.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 30%,rgba(0,0,0,.72))}
-.hero .in{position:relative;z-index:1;width:100%;max-width:1080px;margin:0 auto;padding:0 24px calc(48px + env(safe-area-inset-bottom))}
-.kick{font:600 12px/1 Inter,sans-serif;letter-spacing:3px;text-transform:uppercase;opacity:.9;margin:0 0 14px}
-h1{font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:clamp(46px,9vw,96px);line-height:.98;letter-spacing:-1px;margin:0 0 14px}
-.baj{font-size:clamp(18px,2.4vw,22px);line-height:1.4;max-width:620px;margin:0 0 26px;opacity:.95}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:800;margin:0;text-wrap:balance}
+h2{font-size:clamp(32px,5vw,46px);line-height:1.05}
+h3{font-size:22px;line-height:1.2}
+p{margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right))}
+section{padding-block:64px}
+.eti{font:700 12px/1 Inter,sans-serif;letter-spacing:3px;text-transform:uppercase;color:var(--acento);margin:0 0 14px}
+.lead{font-size:clamp(18px,2.2vw,20px);line-height:1.5;color:#33313B;max-width:640px;margin-top:16px}
 .bts{display:flex;flex-wrap:wrap;gap:12px}
-.bt{display:inline-flex;align-items:center;justify-content:center;height:52px;padding:0 24px;border-radius:999px;font:600 16px/1 Inter,sans-serif;text-decoration:none}
-.bt.p{background:var(--acento);color:#fff}.bt.s{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.55);backdrop-filter:blur(6px)}
-section{max-width:1080px;margin:0 auto;padding:64px 24px}
-h2{font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:clamp(32px,5vw,46px);line-height:1.05;margin:0 0 22px}
-.sobre{display:grid;grid-template-columns:1fr;gap:28px;align-items:start}
+.bt{display:inline-flex;align-items:center;justify-content:center;height:52px;padding:0 24px;border-radius:999px;font:600 16px/1 Inter,sans-serif;text-decoration:none;white-space:nowrap}
+.bt.p{background:var(--acento);color:#fff}.bt.p:hover{background:#653A23}
+.bt.s{background:var(--papel);color:var(--tinta);border:1px solid var(--linea)}
+
+/* hero */
+.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#222}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 25%,rgba(0,0,0,.75))}
+.hero .wrap{position:relative;z-index:1;width:100%;padding-bottom:calc(44px + env(safe-area-inset-bottom))}
+.hero .eti{color:#fff;opacity:.9}
+.hero h1{font-size:clamp(46px,9vw,96px);line-height:.98;letter-spacing:-1px;margin:0 0 14px}
+.hero .baj{font-size:clamp(18px,2.4vw,22px);line-height:1.4;max-width:620px;margin:0 0 26px;opacity:.95}
+.hero .bt.s{background:rgba(255,255,255,.14);color:#fff;border-color:rgba(255,255,255,.55);backdrop-filter:blur(6px)}
+.menu{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.menu a{font-size:14px;font-weight:600;text-decoration:none;color:#fff;opacity:.9;padding:6px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.35)}
+
+/* taller */
+.taller{background:var(--papel);border-block:1px solid var(--linea)}
+.tdos{display:grid;grid-template-columns:1fr;gap:32px;align-items:start}
+.tfoto{border-radius:18px;overflow:hidden;aspect-ratio:4/5;background:#ddd}
+.tfoto img{width:100%;height:100%;object-fit:cover;object-position:30% 50%}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chips span{font-size:14px;font-weight:600;padding:8px 14px;border-radius:999px;background:var(--acento2);color:#4A2C1B}
+.enc{list-style:none;padding:0;margin:26px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.enc li{background:var(--fondo);border:1px solid var(--linea);border-radius:14px;padding:14px 16px}
+.enc b{display:block;font-family:'Playfair Display',Georgia,serif;font-size:20px;line-height:1.2}
+.enc small{display:block;color:var(--suave);font-size:14px;margin-top:2px}
+.incl{display:grid;grid-template-columns:1fr;gap:12px;margin-top:40px}
+.it{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;background:var(--fondo);border:1px solid var(--linea);border-radius:16px;padding:18px}
+.it .ic{width:44px;height:44px;border-radius:50%;background:var(--acento2);display:grid;place-items:center;color:var(--acento)}
+.it .ic svg{width:24px;height:24px}
+.it h3{font-family:Inter,sans-serif;font-weight:700;font-size:17px;line-height:23px;margin-top:10.5px}
+.it p{color:var(--suave);font-size:15px;line-height:1.5;margin-top:4px}
+.hor{margin-top:40px;background:var(--fondo);border:1px solid var(--linea);border-radius:18px;padding:22px 20px}
+.hor h3{font-size:26px}
+.hor .lug{color:var(--suave);margin-top:6px;font-size:15.5px}
+.dias{display:grid;grid-template-columns:1fr;gap:0;margin-top:16px;border-top:1px solid var(--linea)}
+.dia{display:grid;grid-template-columns:96px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--linea);align-items:start}
+.dia b{font-weight:700;line-height:1.5}
+.dia span{display:flex;flex-wrap:wrap;gap:6px}
+.dia span i{font-style:normal;font-size:14.5px;line-height:1.4;padding:2px 10px;border-radius:999px;background:var(--papel);border:1px solid var(--linea);font-variant-numeric:tabular-nums}
+.hor .nota{font-size:14px;color:var(--suave);margin-top:12px}
+.cta{margin-top:30px}
+
+/* tarde */
+.tarde .card{display:grid;grid-template-columns:1fr;background:var(--tinta);color:#F6F1E9;border-radius:22px;overflow:hidden}
+.tarde .card .im{aspect-ratio:4/3;overflow:hidden}.tarde .card .im img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.tarde .card .tx{padding:28px 24px}
+.tarde .eti{color:#E3B796}
+.tarde h2{color:#fff}
+.tarde .lead{color:#E7E1D8}
+.tarde ul{list-style:none;padding:0;margin:20px 0 0;display:flex;flex-direction:column;gap:8px}
+.tarde li{display:grid;grid-template-columns:22px 1fr;gap:10px;font-size:16px;line-height:1.45}
+.tarde li:before{content:"";width:8px;height:8px;border-radius:50%;background:#E3B796;margin:8px 0 0 6px}
+.tarde .bt.p{background:#E3B796;color:var(--tinta)}
+
+/* testimonios */
+.tes{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:28px}
+.te{text-decoration:none;color:inherit;display:flex;flex-direction:column;background:var(--papel);border:1px solid var(--linea);border-radius:16px;overflow:hidden}
+.te .im{aspect-ratio:4/5;overflow:hidden}.te .im img{width:100%;height:100%;object-fit:cover;object-position:center 55%;transition:transform .4s}
+.te:hover .im img{transform:scale(1.04)}
+.te .tx{padding:12px 14px 14px}
+.te b{display:block;font-size:16px}
+.te small{display:block;color:var(--suave);font-size:14px;line-height:1.4;margin-top:2px}
+
+/* obras */
+.obras{background:var(--papel);border-block:1px solid var(--linea)}
+.og{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:28px}
+.ob{text-decoration:none;color:inherit;display:flex;flex-direction:column}
+.ob .im{aspect-ratio:1;overflow:hidden;border-radius:12px;background:#E9E2D6}.ob .im img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.ob:hover .im img{transform:scale(1.04)}
+.ob h3{font-size:19px;margin-top:12px}
+.ob small{display:block;color:var(--suave);font-size:14px;line-height:1.45;margin-top:4px}
+.ob .u{display:inline-block;margin-top:8px;font-size:13px;font-weight:700;letter-spacing:.5px;color:var(--acento)}
+.pedido{display:grid;grid-template-columns:1fr;gap:24px;margin-top:56px;align-items:center}
+.pedido .fotos{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pedido .fotos div{aspect-ratio:3/4;border-radius:14px;overflow:hidden}.pedido .fotos img{width:100%;height:100%;object-fit:cover}
+.pedido h3{font-size:clamp(26px,3.6vw,34px)}
+.pedido p{color:#33313B;margin-top:12px}
+
+/* sobre */
+.sobre .dos{display:grid;grid-template-columns:1fr;gap:28px;align-items:start}
 .sobre .av{width:132px;height:132px;border-radius:50%;object-fit:cover;border:4px solid var(--papel);box-shadow:0 10px 30px -12px rgba(0,0,0,.35)}
-.sobre p{margin:0 0 14px;color:#33313B;max-width:640px}
+.sobre p.c{margin-top:14px;color:#33313B;max-width:640px}
 blockquote{margin:26px 0 0;padding:0 0 0 18px;border-left:3px solid var(--acento);font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:22px;line-height:1.35}
-.sp{width:100%;height:380px;border:0;border-radius:14px;display:block}
-.yt{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#000}.yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.gal.g2{grid-template-columns:repeat(2,1fr);max-width:640px}
-.ph{aspect-ratio:1;overflow:hidden;border-radius:6px;background:#ddd}.ph img{width:100%;height:100%;object-fit:cover;transition:transform .4s}.ph:hover img{transform:scale(1.04)}
-.mas{margin:18px 0 0;font-weight:600}
 .fechas{background:var(--papel);border:1px solid var(--linea);border-radius:20px;padding:28px 24px}
+.fechas h2{margin-bottom:16px}
 #sr-fechas ul{list-style:none;margin:0;padding:0}#sr-fechas li{padding:12px 0;border-bottom:1px solid var(--linea)}#sr-fechas li:last-child{border:0}
-.lks{display:flex;flex-direction:column;gap:10px;max-width:560px}
-.lks a{display:flex;align-items:center;justify-content:space-between;background:var(--papel);border:1px solid var(--linea);border-radius:14px;padding:0 20px;height:58px;text-decoration:none;font-weight:600}
-.lks a span{color:var(--acento)}
-.cierre{text-align:center}.cierre .bts{justify-content:center}.cierre .bt.s{color:var(--tinta);border-color:var(--linea);background:var(--papel)}
-footer{text-align:center;color:var(--suave);font-size:13.5px;padding:28px 24px calc(28px + env(safe-area-inset-bottom));border-top:1px solid var(--linea)}
+.cierre{text-align:center}.cierre .bts{justify-content:center;margin-top:22px}.cierre .lead{margin-inline:auto}
+footer{text-align:center;color:var(--suave);font-size:13.5px;padding:28px 20px calc(28px + env(safe-area-inset-bottom));border-top:1px solid var(--linea)}
 footer a{color:var(--suave)}
-@media(min-width:820px){.sobre{grid-template-columns:180px 1fr;gap:48px}.sobre .av{width:180px;height:180px}.gal{gap:10px}}
+
+@media(min-width:820px){
+  section{padding-block:88px}
+  .tdos{grid-template-columns:1.1fr .9fr;gap:56px}
+  .incl{grid-template-columns:repeat(2,1fr)}
+  .hor{padding:28px}
+  .tarde .card{grid-template-columns:1fr 1fr}.tarde .card .im{aspect-ratio:auto;position:relative;min-height:420px}.tarde .card .im img{position:absolute;inset:0}.tarde .card .tx{padding:44px 40px}
+  .tes{grid-template-columns:repeat(4,1fr);gap:16px}
+  .og{grid-template-columns:repeat(4,1fr);gap:18px}
+  .pedido{grid-template-columns:1fr 1fr;gap:48px}
+  .sobre .dos{grid-template-columns:180px 1fr;gap:48px}.sobre .av{width:180px;height:180px}
+}
 </style>
 </head>
 <body>
 <header class="hero" data-b="1">
-  <img src="img/hero.jpg" alt="" data-e="1">
-  <div class="in">
-    <p class="kick" data-e="2">Artista visual y cantante</p>
+  <img src="img/hero.jpg" alt="Obra Profundidades, de Jimena Mercedes" data-e="1">
+  <div class="wrap">
+    <p class="eti" data-e="2">Artista visual y cantante</p>
     <h1 data-e="3">Jimena Mercedes</h1>
     <p class="baj" data-e="4">Música, pintura e intuición. Donde el sonido se transforma en color.</p>
-    <div class="bts"><a class="bt p" href="https://www.jimenamercedes.com/" target="_blank" rel="noopener" data-e="5">Ver mi trabajo</a><a class="bt s" href="https://instagram.com/jimenamercedes.art" target="_blank" rel="noopener" data-e="6">@jimenamercedes.art</a></div>
+    <div class="bts"><a class="bt p" href="#taller" data-e="5">Sumate a Música a la Obra</a><a class="bt s" href="#obras" data-e="6">Ver obras</a></div>
+    <nav class="menu"><a href="#taller" data-e="7">Taller</a><a href="#tarde" data-e="8">Experiencia de una tarde</a><a href="#obras" data-e="9">Obras</a><a href="#pedido" data-e="10">Obra a pedido</a></nav>
   </div>
 </header>
-<section class="sobre" data-b="2">
-  <img class="av" src="img/avatar.jpg" alt="" data-e="7">
-  <div><h2 data-e="8">Sobre mí</h2><p data-e="9">Soy artista visual y cantante. Mi trabajo nace en la intersección entre la música y la pintura: exploro cómo el ritmo, las texturas y el color pueden traducir lo que escuchamos, transformando el sonido en gesto, en materia, en obra.</p><p data-e="10">Comparto esta experiencia a través de Música a la Obra, un taller donde te invito a crear pintura intuitiva inspirada en la música que vos elegís. También participo en proyectos musicales en vivo y mis obras forman parte de espacios y colecciones.</p><blockquote data-e="11">La música deja de sonar, pero sigue resonando en la obra.</blockquote></div>
+
+<section class="taller" id="taller" data-b="2">
+  <div class="wrap">
+    <div class="tdos">
+      <div>
+        <p class="eti" data-e="11">Taller de pintura intuitiva</p>
+        <h2 data-e="12">Música a la Obra</h2>
+        <p class="lead" data-e="13">Elegís la música que te emociona y la llevamos al lienzo. En 4 encuentros presenciales exploramos el ritmo, el color, la emoción y las texturas, y te llevás tu propia obra terminada.</p>
+        <div class="chips"><span data-e="14">No necesitás experiencia previa</span><span data-e="15">4 encuentros</span><span data-e="16">Materiales incluidos</span><span data-e="17">Grupos reducidos</span></div>
+        <ul class="enc">
+          <li><b data-e="18">Ritmo</b><small data-e="19">Encuentro 1</small></li>
+          <li><b data-e="20">Color</b><small data-e="21">Encuentro 2</small></li>
+          <li><b data-e="22">Emoción</b><small data-e="23">Encuentro 3</small></li>
+          <li><b data-e="24">Texturas</b><small data-e="25">Encuentro 4</small></li>
+        </ul>
+      </div>
+      <div class="tfoto"><img src="img/t-monica2.jpg" alt="Alumna pintando en Música a la Obra" loading="lazy" data-e="26"></div>
+    </div>
+
+    <div class="incl">
+      <div class="it"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="13" rx="1"/><path d="M8 21l2-5M16 21l-2-5M12 3V1.5"/></svg></span><div><h3 data-e="27">Bastidor incluido</h3><p data-e="28">Bastidor de 45 × 60 cm de excelente calidad, marca Di Mola, para que te lleves tu obra.</p></div></div>
+      <div class="it"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 0 18c1.4 0 2-1 2-2s-1-1.6-1-2.6 1-1.4 2.2-1.4H17a4 4 0 0 0 4-4c0-4.4-4-8-9-8z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7" r="1"/><circle cx="15" cy="7" r="1"/></svg></span><div><h3 data-e="29">Todos los materiales</h3><p data-e="30">Acrílicos, pinceles, espátulas, marcadores, óleo pastel, gesso, lápices acuarelables, carbonilla, papel de 300 g, tinta china y delantal.</p></div></div>
+      <div class="it"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg></span><div><h3 data-e="31">La música como punto de partida</h3><p data-e="32">Playlists con distintos paisajes sonoros para que elijas la que más te movilice. Cada encuentro es una invitación a escuchar y transformar el sonido en obra.</p></div></div>
+      <div class="it"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.2c2.8.4 5 2.8 5 5.8"/></svg></span><div><h3 data-e="33">Grupos reducidos</h3><p data-e="34">Acompañamiento personalizado en un taller cálido y creativo.</p></div></div>
+    </div>
+
+    <div class="hor">
+      <h3 data-e="35">Lugar, días y horarios</h3>
+      <p class="lug" data-e="36">Paternal, CABA. Cerca de Juan B. Justo y Boyacá, a 10 minutos de Villa Crespo. Encuentros semanales de 2 horas.</p>
+      <div class="dias">
+        <div class="dia"><b data-e="37">Lunes</b><span data-e="38"><i>14.30 a 16.30</i><i>17 a 19</i><i>19.30 a 21.30</i></span></div>
+        <div class="dia"><b data-e="39">Martes</b><span data-e="40"><i>14 a 16</i><i>16.30 a 18.30</i></span></div>
+        <div class="dia"><b data-e="41">Jueves</b><span data-e="42"><i>14.30 a 16.30</i><i>17 a 19</i><i>19.30 a 21.30</i></span></div>
+      </div>
+      <p class="nota" data-e="43">Consultá disponibilidad: los cupos de cada grupo son limitados.</p>
+      <div class="bts cta"><a class="bt p" href="https://ig.me/m/jimenamercedes.art" target="_blank" rel="noopener" data-e="44">Consultar y reservar mi lugar</a></div>
+    </div>
+  </div>
 </section>
-<section data-b="3"><h2 data-e="12">Lo último</h2><div class="gal"><a class="ph" href="https://www.instagram.com/p/DfAxOi1G6GY/" target="_blank" rel="noopener"><img src="img/p1.jpg" alt="" loading="lazy" data-e="13"></a><a class="ph" href="https://www.instagram.com/p/DfApYCMGz1y/" target="_blank" rel="noopener"><img src="img/p2.jpg" alt="" loading="lazy" data-e="14"></a><a class="ph" href="https://www.instagram.com/reel/De-FhXaoxcv/" target="_blank" rel="noopener"><img src="img/p3.jpg" alt="" loading="lazy" data-e="15"></a><a class="ph" href="https://www.instagram.com/reel/De-DRAsoWY0/" target="_blank" rel="noopener"><img src="img/p4.jpg" alt="" loading="lazy" data-e="16"></a><a class="ph" href="https://www.instagram.com/reel/De4KhfaoQqg/" target="_blank" rel="noopener"><img src="img/p5.jpg" alt="" loading="lazy" data-e="17"></a><a class="ph" href="https://www.instagram.com/p/DeuhSdaG3e8/" target="_blank" rel="noopener"><img src="img/p6.jpg" alt="" loading="lazy" data-e="18"></a><a class="ph" href="https://www.instagram.com/p/Deh3dh1IPM4/" target="_blank" rel="noopener"><img src="img/p7.jpg" alt="" loading="lazy" data-e="19"></a><a class="ph" href="https://www.instagram.com/p/Def7QGnjfdx/" target="_blank" rel="noopener"><img src="img/p8.jpg" alt="" loading="lazy" data-e="20"></a><a class="ph" href="https://www.instagram.com/reel/DeUO353oUV9/" target="_blank" rel="noopener"><img src="img/p9.jpg" alt="" loading="lazy" data-e="21"></a></div><p class="mas"><a href="https://instagram.com/jimenamercedes.art" target="_blank" rel="noopener" data-e="22">Ver más en Instagram →</a></p></section><section data-b="4"><div class="fechas"><h2 data-e="23">Próximas fechas</h2><div id="sr-fechas"><!-- sr-fechas -->
+
+<section class="tarde" id="tarde" data-b="3">
+  <div class="wrap">
+    <div class="card">
+      <div class="im"><img src="img/tarde.jpg" alt="Experiencia de una tarde de Música a la Obra en Villa Crespo" loading="lazy" data-e="45"></div>
+      <div class="tx">
+        <p class="eti" data-e="46">Edición especial</p>
+        <h2 data-e="47">Experiencia de una tarde</h2>
+        <p class="lead" data-e="48">Un encuentro único de 3 horas para salir de la rutina y terminar el día con una obra creada por vos. Podés venir sola o compartirlo con alguien que quieras.</p>
+        <ul>
+          <li data-e="49">Villa Crespo, de 17 a 20 hs</li>
+          <li data-e="50">Materiales y bastidor incluidos</li>
+          <li data-e="51">Pausa de café y algo dulce</li>
+          <li data-e="52">Cupos reducidos: consultá la próxima fecha</li>
+        </ul>
+        <div class="bts cta"><a class="bt p" href="https://ig.me/m/jimenamercedes.art" target="_blank" rel="noopener" data-e="53">Quiero la próxima fecha</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonios" data-b="4">
+  <div class="wrap">
+    <p class="eti" data-e="54">Lo que crearon</p>
+    <h2 data-e="55">Cada una encontró su propia obra</h2>
+    <div class="tes">
+      <a class="te" href="https://www.instagram.com/reel/De4KhfaoQqg/" target="_blank" rel="noopener"><div class="im"><img src="img/t-monica.jpg" alt="Mónica con su obra" loading="lazy" data-e="56"></div><div class="tx"><b data-e="57">Mónica</b><small data-e="58">Eligió el tango de Piazzolla y volvió a elegir el taller.</small></div></a>
+      <a class="te" href="https://www.instagram.com/reel/DdMCHHOohDD/" target="_blank" rel="noopener"><div class="im"><img src="img/t-claudia.jpg" alt="Claudia con su obra" loading="lazy" data-e="59"></div><div class="tx"><b data-e="60">Claudia</b><small data-e="61">Encontró su inspiración en la bossa nova.</small></div></a>
+      <a class="te" href="https://www.instagram.com/reel/DdJWGQaIpuN/" target="_blank" rel="noopener"><div class="im"><img src="img/t-valeria.jpg" alt="Valeria con su obra" loading="lazy" data-e="62"></div><div class="tx"><b data-e="63">Valeria</b><small data-e="64">Cuenta cómo vivió los 4 encuentros.</small></div></a>
+      <a class="te" href="https://www.instagram.com/reel/DdjJZ_5Iqy2/" target="_blank" rel="noopener"><div class="im"><img src="img/t-lorena.jpg" alt="Lorena con su obra" loading="lazy" data-e="65"></div><div class="tx"><b data-e="66">Lorena</b><small data-e="67">Vino a la experiencia de una tarde y volvió a terminar su obra.</small></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="obras" id="obras" data-b="5">
+  <div class="wrap">
+    <p class="eti" data-e="68">Obra original</p>
+    <h2 data-e="69">Obras</h2>
+    <p class="lead" data-e="70">Piezas únicas en técnica mixta y acrílico. Escribime para consultar disponibilidad, precio y envío.</p>
+    <div class="og">
+      <a class="ob" href="https://www.instagram.com/p/DeuhSdaG3e8/" target="_blank" rel="noopener"><div class="im"><img src="img/o-profundidades.jpg" alt="Obra Profundidades" loading="lazy" data-e="71"></div><h3 data-e="72">Profundidades</h3><small data-e="73">Acrílico sobre lienzo · 120 × 90 cm · Serie Resonancias</small><span class="u" data-e="74">Obra única · Consultar</span></a>
+      <a class="ob" href="https://www.instagram.com/p/DcwSQzFG4zA/" target="_blank" rel="noopener"><div class="im"><img src="img/o-calles.jpg" alt="Obra Calles sin mapa" loading="lazy" data-e="75"></div><h3 data-e="76">Calles sin mapa</h3><small data-e="77">Técnica mixta sobre lienzo · 100 × 90 cm · Serie Mis Pueblos · 2026</small><span class="u" data-e="78">Obra única · Consultar</span></a>
+      <a class="ob" href="https://www.instagram.com/reel/DcgM-pYoYKl/" target="_blank" rel="noopener"><div class="im"><img src="img/o-memoria.jpg" alt="Obra El color de la memoria" loading="lazy" data-e="79"></div><h3 data-e="80">El color de la memoria</h3><small data-e="81">Técnica mixta · 120 × 100 cm · 2026</small><span class="u" data-e="82">Obra única · Consultar</span></a>
+      <a class="ob" href="https://www.instagram.com/p/DXTBx0njJ8l/" target="_blank" rel="noopener"><div class="im"><img src="img/o-copete.jpg" alt="Tríptico Copete Rojo" loading="lazy" data-e="83"></div><h3 data-e="84">Copete Rojo</h3><small data-e="85">Tríptico · técnica mixta · Serie Mis Bosques · 2026</small><span class="u" data-e="86">Obra única · Consultar</span></a>
+    </div>
+
+    <div class="pedido" id="pedido">
+      <div class="fotos"><div><img src="img/enc-ciervos.jpg" alt="Obra a pedido para la cabaña Paso de los Ciervos" loading="lazy" data-e="87"></div><div><img src="img/enc-casavaz.jpg" alt="Obras de Jimena Mercedes en Casa Vaz" loading="lazy" data-e="88"></div></div>
+      <div>
+        <p class="eti" data-e="89">Obra a pedido</p>
+        <h3 data-e="90">Una obra pensada para tu espacio</h3>
+        <p data-e="91">Si estás proyectando tu casa, tu cabaña o un local, puedo crear una pieza única, desde el concepto hasta la obra final, en diálogo con la arquitectura y el entorno. Así nacieron las obras para Paso de los Ciervos y para los ambientes de Casa Vaz.</p>
+        <div class="bts cta"><a class="bt p" href="https://ig.me/m/jimenamercedes.art" target="_blank" rel="noopener" data-e="92">Contame tu proyecto</a><a class="bt s" href="https://www.jimenamercedes.com/gallery/" target="_blank" rel="noopener" data-e="93">Ver galería completa</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sobre" data-b="6">
+  <div class="wrap dos">
+    <img class="av" src="img/avatar.jpg" alt="Jimena Mercedes" data-e="94">
+    <div><h2 data-e="95">Sobre mí</h2><p class="c" data-e="96">Soy artista visual y cantante. Mi trabajo nace en la intersección entre la música y la pintura: exploro cómo el ritmo, las texturas y el color pueden traducir lo que escuchamos, transformando el sonido en gesto, en materia, en obra.</p><p class="c" data-e="97">Comparto esta experiencia a través de Música a la Obra, un taller donde te invito a crear pintura intuitiva inspirada en la música que vos elegís. También participo en proyectos musicales en vivo y mis obras forman parte de espacios y colecciones.</p><blockquote data-e="98">La música deja de sonar, pero sigue resonando en la obra.</blockquote></div>
+  </div>
+</section>
+
+<section data-b="7"><div class="wrap"><div class="fechas"><h2 data-e="99">Próximas fechas</h2><div id="sr-fechas"><!-- sr-fechas -->
 <p class="nada">Pronto nuevas fechas.</p>
-<!-- /sr-fechas --></div></div></section>
-<section class="cierre" data-b="5">
-  <h2 data-e="24">Sigamos en contacto</h2>
-  <div class="bts"><a class="bt p" href="https://instagram.com/jimenamercedes.art" target="_blank" rel="noopener" data-e="25">Instagram</a></div>
+<!-- /sr-fechas --></div></div></div></section>
+
+<section class="cierre" data-b="8">
+  <div class="wrap">
+    <h2 data-e="100">¿Te sumás?</h2>
+    <p class="lead" data-e="101">Escribime por mensaje y te cuento los próximos grupos, la próxima tarde especial o las obras disponibles.</p>
+    <div class="bts"><a class="bt p" href="https://ig.me/m/jimenamercedes.art" target="_blank" rel="noopener" data-e="102">Escribime por Instagram</a><a class="bt s" href="https://instagram.com/jimenamercedes.art" target="_blank" rel="noopener" data-e="103">@jimenamercedes.art</a></div>
+  </div>
 </section>
-<footer data-b="6">© 2026 Jimena Mercedes · Hecha con <a href="https://semillaia.com" target="_blank" rel="noopener" data-e="26">SemillaIA</a></footer>
+<footer data-b="9">© 2026 Jimena Mercedes · Hecha con <a href="https://semillaia.com" target="_blank" rel="noopener" data-e="104">SemillaIA</a></footer>
 <script src="https://vm.semillaredes.com/web/editor.js" defer></script>
 <script src="https://semillaredes.com/assets/idioma.js" defer></script>
 </body>
